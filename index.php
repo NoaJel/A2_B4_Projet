@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./scss/index.css" type="text/css" />
 </head>
 <body>
-    <?php require_once "header.php" ?>
+    <?php require_once "header-stu.php" ?>
     <main>
         <h1>Welcome to uLink !</h1>
         <p>

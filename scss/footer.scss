@@ -1,3 +1,5 @@
+@import "./common";
+
 footer {
     position: fixed;
     bottom: 0;
@@ -5,6 +7,10 @@ footer {
     width: inherit;
     max-width: inherit;
     
-    background-color: grey;
+    background-color: var(--clr-primary-300);
     text-align: center;
+}
+
+footer a {
+    @include link-reset;
 }
