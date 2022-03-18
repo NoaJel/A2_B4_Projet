@@ -6,7 +6,7 @@
 <body>
     <?php require_once "header.php" ?>
     <main>
-        <h1>Welcome to uLink!</h1>
+        <h1>Welcome to uLink !</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia commodi excepturi ipsam magnam aut! Unde vero at consectetur doloremque omnis necessitatibus harum deleniti quasi numquam nulla quisquam eos aliquam vitae illo fuga ex itaque iusto, distinctio quaerat saepe consequuntur nesciunt cumque. Harum qui provident officia eaque sequi eos, tempora non.
         </p>
