@@ -1,12 +1,40 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin btn-reset { // removes default button styles -> use it inside a selector with   @include btn-reset;
+	//font: inherit;
+	//color: inherit;
+
+	background-color: transparent;
+	border: none;
+    margin: 0;
+	padding: 0;
+
+	cursor: pointer;
+	//outline: inherit;
+}
+
+:root {
+    --clr-primary-300: #b1ab99;
+    --clr-primary-500: #824936;
+    --clr-primary-700: #4b4737;
+    
+    --clr-accent-200: #f1d900;
+
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #222c2a;
+
+    --ff-primary: "Open Sans", sans-serif;
+    --ff-accent: "intro-bold", sans-serif;
 }
 
 html {
-    font-family: "Century Expanded", serif;
+    font-family: var(--ff-primary);
 }
 
 h1,
@@ -15,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Intro", "Futura Bold", sans-serif;
+    font-family: var(--ff-accent);
 }
 
 body {
@@ -29,7 +57,7 @@ body {
     margin: 0 auto;
 
     //box-sizing: content-box;
-    border: solid 2px orange;
+    //border: solid 2px orange;
 }
 
 main {

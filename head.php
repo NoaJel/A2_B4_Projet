@@ -10,4 +10,7 @@
     <link rel="stylesheet" href="./scss/footer.css" type="text/css" />
     <!-- FONTS -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet" />
     <!-- /FONTS -->
