@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: "Century Expanded", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Intro", "Futura Bold", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    //box-sizing: content-box;
+    border: solid 2px orange;
+}
+
+main {
+    //flex-grow: 1;
+    padding: 6rem 2rem 3rem 2rem;
+}

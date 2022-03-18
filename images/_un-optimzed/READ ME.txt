@@ -1,0 +1,6 @@
+Un-optimized images are pictures that are not to the jpeg format and for which their size haven't been reduced with a tool such as TinyPNG ( https://tinypng.com/ ) for example.
+
+The only benefit with the png format is that it allows transparent backgrounds, but it's fairly rare. Indeed, if you've got a solid color as a background in your website, you juste have to apply the same color to the background of the image and you'll be good to go! It will take much less space and performances.
+
+
+Please optimize your pictures! It's good for SEO and for the user experience (UX) as the site loads faster!

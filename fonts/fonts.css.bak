@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Futura Bold";
+    src: url("futura_bold-webfont.woff2") format("woff2"),
+         url("futura_bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "Intro";
+    src: url("intro-webfont.woff2") format("woff2"),
+         url("intro-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: "intro_boldregular";
+    src: url("intro_bold_regular-webfont.woff2") format("woff2"),
+         url("intro_bold_regular-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
