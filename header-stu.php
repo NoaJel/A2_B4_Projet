@@ -8,7 +8,7 @@
         </ul>
     </nav>
     <div class="nav-icons">
-        <i class="fas fa-bell"></i>
+        <a href="#" class="notif-icon"><i class="fas fa-bell"></i></a>
         <button type="button" class="login-btn">
             Login <i class="fas fa-user-alt"></i>
         </button>

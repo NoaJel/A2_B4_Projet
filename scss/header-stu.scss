@@ -26,21 +26,54 @@ header {
         aspect-ratio: 1;
 
         margin-left: 3rem;
+        transition: all 0.1s ease-in-out;
     }
     
+        .ulink-logo:hover {
+            transform: translate(-0.15rem, -0.15rem);
+            box-shadow: 0.15rem 0.15rem 0.15rem rgba($color: #000, $alpha: 0.3);
+        }
+
+
     .nav-links {
         list-style: none;
         
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem 5rem;
+        gap: 0.5rem 3rem;
     }
 
-        .nav-links a {
+        .nav-links a,
+        .nav-icons a {
             @include link-reset;
             color: var(--clr-neutral-900);
+
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+
+            transition:
+                background-color 0.2s ease-out,
+                color 0.05s ease-out,
+                scale 0.2s ease-in-out
+            ;
         }
+
+        .nav-icons .notif-icon {
+            padding: 0.3rem 0.6rem; // overwrites the links padding
+            border-radius: 50%; // overwrites the 6px border radius
+        }
+
+            .nav-links a:hover {
+                background-color: var(--clr-primary-700);
+                color: var(--clr-neutral-100);
+            }
+
+            .nav-icons .notif-icon:hover {
+                background-color: rgba($color: #000, $alpha: 0.1);
+                transform: scale(1.2);
+            }
     
+
     .nav-icons {
         display: flex;
         align-items: center;
@@ -62,8 +95,14 @@ header {
         border-radius: 6px;
 
         font-weight: 700;
+
+        transition: scale 0.2s ease-in-out;
     }
 
         .login-btn i {
             font-size: 1.2rem;
+        }
+
+        .login-btn:hover {
+            transform: scale(1.1);
         }
