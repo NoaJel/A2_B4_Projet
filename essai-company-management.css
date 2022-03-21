@@ -1,0 +1,27 @@
+
+    .img {
+        float: left;
+        display:block;
+        margin:auto;
+    }
+
+    body{
+        margin: 10;
+    }
+
+    .form{
+        position:absolute;
+        display: block;
+        float: right;
+        bottom:0;
+        right:0;
+        margin: auto;
+    }
+
+    .submit {
+    position:absolute;
+    bottom:0;
+    right:0;
+    float: right;
+    margin: auto;
+    }
