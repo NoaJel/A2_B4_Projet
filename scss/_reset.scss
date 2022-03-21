@@ -1,6 +1,6 @@
 @mixin btn-reset { // removes default button styles -> use it inside a selector with   @include btn-reset;
-	//font: inherit;
-	//color: inherit;
+	font: inherit;
+	color: inherit;
 
 	background-color: transparent;
 	border: none;
@@ -8,7 +8,7 @@
 	padding: 0;
 
 	cursor: pointer;
-	//outline: inherit;
+	outline: inherit;
 }
 
 @mixin link-reset {
