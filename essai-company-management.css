@@ -9,19 +9,16 @@
         margin: 10;
     }
 
-    .form{
-        position:absolute;
-        display: block;
+    form{
+        position: absolute;
         float: right;
-        bottom:0;
         right:0;
-        margin: auto;
+        margin: 10px;
     }
 
     .submit {
-    position:absolute;
-    bottom:0;
+    position:relative;
     right:0;
     float: right;
-    margin: auto;
+    margin: 10px;
     }
