@@ -328,14 +328,9 @@ header {
             transform: translateX(0);
   }
   .nav-links li a:hover {
-    margin-right: 0.5rem;
+    padding-right: 2rem;
     background-color: inherit;
     color: inherit;
-  }
-  .nav-links li a:hover::after {
-    opacity: 1;
-    -webkit-transform: scaleX(1) translateX(0);
-            transform: scaleX(1) translateX(0);
   }
   .nav-icons {
     margin-right: 0;

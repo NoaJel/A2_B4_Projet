@@ -7,7 +7,7 @@
         <ul class="nav-links" data-nav-vertical>
             <li><a href="#">Your internships</a></li>
             <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Research &nbsp; <i class="fas fa-search"></i></a></li>
+            <li><a href="#">Research <i class="fas fa-search"></i></a></li>
         </ul>
     </nav>
     <div class="nav-icons">
