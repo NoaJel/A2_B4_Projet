@@ -1,7 +1,10 @@
 <header>
     <a href="/"><img src="./images/logo.png" alt="uLink logo" class="ulink-logo" /></a>
-    <nav>
-        <ul class="nav-links">
+    <nav class="parent-burger">
+        <button class="i-burger" data-burger-toggle type="button">
+            <span></span> <!-- middle bar -->
+        </button>
+        <ul class="nav-links" data-nav-vertical>
             <li><a href="#">Your internships</a></li>
             <li><a href="#">Wishlist</a></li>
             <li><a href="#">Research &nbsp; <i class="fas fa-search"></i></a></li>
@@ -13,4 +16,5 @@
             Login <i class="fas fa-user-alt"></i>
         </button>
     </div>
+    <div id="burger-overlay"></div>
 </header>

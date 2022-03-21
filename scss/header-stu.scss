@@ -70,6 +70,7 @@ header {
 
             .nav-icons .notif-icon:hover {
                 background-color: rgba($color: #000, $alpha: 0.1);
+                transform-origin: center;
                 transform: scale(1.2);
             }
     
@@ -104,5 +105,174 @@ header {
         }
 
         .login-btn:hover {
+            transform-origin: center;
             transform: scale(1.1);
         }
+
+// BURGER MENU ===================================================
+
+.i-burger {
+    @include btn-reset;
+    
+    width: 2.8rem;
+    height: 1.8rem;
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 1.1rem 1.7rem 1.1rem 2.1rem; // increase the size of the hitbox of the burger menu
+    //border: solid 1px orangered;
+    position: relative;
+}
+
+    .i-burger span::before,
+    .i-burger span,
+    .i-burger span::after {
+        position: absolute;
+        content: '';
+
+        background-color: white;
+        border-radius: 8px;
+    }
+    .i-burger span {
+        height: 0.25rem;
+        width: 2.8rem;
+        
+        transition: background-color ease-in-out 0.125s;
+    }
+    
+        .i-burger span::before,
+        .i-burger span::after {
+            height: 100%;
+
+            transition: all ease-in-out 0.25s;
+        }
+        .i-burger span::before {
+            width: 115%;
+            transform: translateX(-1 * (50% + (100%/15))) translateY(-300%);
+        }
+        .i-burger span::after {
+            width: 85%;
+            transform: translateX(calc(-1 * (50% - (100%/15)))) translateY(300%);
+        }
+
+        .i-burger.opened span {
+            background: none;
+        }
+            .i-burger.opened span::before {
+                width: 90%;
+                transform: translateX(-1 * (50% + (100%/15))) rotateZ(45deg);
+            }
+            .i-burger.opened span::after {
+                width: 90%;
+                transform: translateX(-1 * (50% + (100%/15))) rotateZ(-45deg);
+            }
+
+    #burger-overlay {
+        display: none;
+        position: fixed;
+        
+        background-color: rgba(#000, 0.5);
+
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    #burger-overlay.burger-overlay-active {
+        display: initial;
+        opacity: 1;
+    }
+
+// MEDIA QUERY
+    @media (max-width: 461px) {
+        .i-burger {
+            display: flex;
+            //border: solid 1px red;
+    
+            z-index: 1;
+        }
+    
+        .parent-burger {
+            order: 2;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    
+            z-index: 5;
+        }
+    
+        .i-burger.opened:hover > span::before,
+        .i-burger.opened:hover > span::after {
+            background-color: #747474;
+        }
+    
+        .nav-links {
+            opacity: 0;
+            
+            flex-direction: column;
+            align-items: flex-end;
+            //border: solid 1px orange;
+    
+            position: fixed;
+            top: 0;
+            right: 0;
+    
+            background-color: rgb(146, 46, 46);
+            border-radius: 8px;
+            border: solid 0.2rem rgba(#000, 0.8);
+            margin-top: 0.5rem;
+            padding: 5.5rem 1.5rem 1rem 3rem;
+    
+            transform: translateX(100%);
+            transition:
+                transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.5s ease;
+        }
+    
+        .nav-links.unrolled {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    
+        .nav-links li a {
+            color: #e2e1e1;
+        }
+    
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+    
+            background-color: #8a4e4e;
+            height: 1.5rem;
+            width: 100%;
+            margin-left: -1rem;
+            padding: 0.25rem 0;
+            z-index: -1;
+            border-radius: 6px;
+            
+            opacity: 0;
+            transform: scaleX(0) translateX(100%);
+            transition: all 0.3s ease-in-out;
+        }
+    
+        .nav-links li a:hover {
+            background-color: inherit;
+    
+            padding-right: 3rem;
+            margin-left: -5rem;
+        }
+    
+        .nav-links li a:hover::after {
+            opacity: 1;
+            transform: scaleX(1) translateX(0);
+        }
+    }
