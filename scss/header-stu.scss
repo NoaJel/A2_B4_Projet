@@ -1,6 +1,6 @@
 @import "./common";
 
-header {
+.header {
     position: fixed;
     top: 0;
 
@@ -10,7 +10,7 @@ header {
     background-color: var(--clr-primary-200);
 }
 
-header {
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -193,6 +193,103 @@ header {
         opacity: 1;
     }
 
+// LOGIN MODAL
+
+.modal-container {
+    //display: none;
+
+    position: fixed;
+    top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); // center the model
+    z-index: 50; // place on top of most of the items
+    
+    border: 1px solid black;
+    border-radius: 10px;
+
+    width: 500px;
+    max-width: 80%;
+    background: rgb(250, 250, 250);
+
+    transition: 0.2s;
+}
+    .modal-container.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0.5rem 0.75rem;
+        background: linear-gradient(to right, rgb(255, 123, 75), rgb(255, 143, 102));
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0.1rem solid black;
+    }
+        .modal-header .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+
+            margin-left: 1rem;
+            padding-top: 0.2rem;
+        }
+        .modal-header .modal-close-btn {
+            @include btn-reset;
+
+            padding: 0.1rem 0.4rem; // allows to equalize the size of the hitbox
+            position: relative;
+        }
+            .modal-header .modal-close-btn .cross {
+                color: #000; // for a reason or another, the cross was grey
+            } 
+            .modal-header .modal-close-btn .cross-bg {
+                position: absolute;
+                content: '';
+
+                display: block;
+                
+                width: 2rem;
+                height: 2rem;
+                background-color: rgba(#000, 0.1);
+
+                top: 50%; left: 50%; transform: translate(-50%, -50%);
+                border-radius: 50%;
+
+                opacity: 0;
+                transition: ease-in-out 0.25s;
+            }
+                .modal-header .modal-close-btn .cross-bg:hover {
+                    opacity: 1;
+                }
+
+    .modal-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0.5rem 0.75rem;
+        border-bottom: 0.1rem solid black;
+    }
+
+#modal-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(#000, 0.6);
+
+    z-index: 49; // just one step away from being in front of the modal
+    opacity: 0;
+    transition: 0.2s ease-in-out;
+
+    pointer-events: none;
+}
+    #modal-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
 // MEDIA QUERY
     @media (max-width: 476px) {
     // BURGER MENU ==========================================================================
@@ -252,7 +349,7 @@ header {
             background-color: inherit;
             color: inherit;
         }
-        
+
         .nav-icons {
             margin-right: 0;
         }
@@ -263,7 +360,7 @@ header {
     }
 
     @media (max-width: 276px) {
-        header {
+        .header {
             flex-wrap: wrap-reverse;
         }
 

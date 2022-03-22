@@ -1,4 +1,4 @@
-/* const openLoginModal = document.querySelectorAll("[data-modal-target]");
+const openLoginModal = document.querySelectorAll("[data-modal-target]");
 const closeLoginModal = document.querySelectorAll("[data-modal-close]");
 const modalOverlay = document.getElementById("modal-overlay");
 
@@ -36,18 +36,18 @@ function closeModal(modal) {
     modal.classList.remove("active");
     modalOverlay.classList.remove("active");
 }
- */
+
 
 
 
 const openBurgerMenu = document.querySelector("[data-burger-toggle]");
 const navLinks = document.querySelector("[data-nav-vertical]");
 const burgerOverlay = document.querySelector("#burger-overlay");
-
+// NB: Uncomment the commented lines below to disable the burger window on scroll
 
 openBurgerMenu.addEventListener("click", () => {
     toggleBurger();
-    window.addEventListener("scroll", removeBurger);
+    // window.addEventListener("scroll", removeBurger);
 });
 
 burgerOverlay.addEventListener("click", removeBurger);
@@ -60,7 +60,7 @@ function toggleBurger() {
 }
 
 function removeBurger() {
-    this.removeEventListener("scroll", arguments.callee, false);
+    // this.removeEventListener("scroll", arguments.callee, false);
 
     openBurgerMenu.classList.remove("opened");
     navLinks.classList.remove("unrolled");
