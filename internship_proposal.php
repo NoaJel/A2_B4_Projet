@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <?php require "head.php" ?>
     <title> Create an internship proposal </title>
-    <meta charset="utf-8">
+    <meta charset="description" content="Page where you create internship proposal">
     <link rel="stylesheet" href="internship-proposal.css">
     </head>
 
 <body>
-    <h1>Create an Internship Proposal</h1>
+        <?php require "header-stu.php"?>
+        <h1>Create an Internship Proposal</h1>
     
         <td><label>What entreprise ?</label></td>
         <br>
@@ -29,3 +30,5 @@
 <br><br>
         <input type="submit" value="Submit">
         </form>
+        <?php require "footer.php"?>
+</body>
