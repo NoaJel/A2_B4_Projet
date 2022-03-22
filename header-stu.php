@@ -20,13 +20,25 @@
 
     <div class="modal-container" id="modal-container">
         <header class="modal-header">
-            <h2 class="title">Login</h2>
+            <h2 class="title">Welcome</h2>
             <button class="modal-close-btn" data-modal-close type="button">
                 <span class="cross">&#10006;</span>
                 <span class="cross-bg"></span>
             </button>
         </header>
         <main class="modal-main">
+            <h3>Login to your account!</h3>
+            <form action="" method="POST">
+                <div class="login-field">
+                    <label for="login-email"></label>
+                    <input type="email" name="login_email" class="login-input" id="login-email" placeholder="Email" />
+                </div>
+                <div class="login-field">
+                    <label for="login-password"></label>
+                    <input type="password" name="login_password" class="login-input" id="login-password" placeholder="Password" />
+                </div>
+                <button type="submit" class="login-input">Login</button>
+            </form>
         </main>
         <footer class="modal-footer">
         </footer>

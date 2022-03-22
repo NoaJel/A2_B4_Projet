@@ -113,6 +113,8 @@
             transform: scale(1.1);
         }
 
+
+
 // BURGER MENU ==========================================================================
 
 .i-burger {
@@ -193,11 +195,11 @@
         opacity: 1;
     }
 
-// LOGIN MODAL
+
+
+// LOGIN MODAL ===========================================================================
 
 .modal-container {
-    //display: none;
-
     position: fixed;
     top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); // center the model
     z-index: 50; // place on top of most of the items
@@ -290,7 +292,19 @@
         pointer-events: all;
     }
 
-// MEDIA QUERY
+    // LOGIN FORM ==================================
+    .login-field input {
+        @include input-reset;
+        border-radius: 6px;
+    }
+    
+    .login-field input:focus {
+        border-color: var(--clr-accent-200);        
+    }
+
+
+// MEDIA QUERY ==========================================================================
+
     @media (max-width: 476px) {
     // BURGER MENU ==========================================================================
     

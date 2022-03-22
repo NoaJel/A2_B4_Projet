@@ -386,6 +386,19 @@ main {
   pointer-events: all;
 }
 
+.login-field input {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid 1px black;
+  border-radius: 6px;
+}
+
+.login-field input:focus {
+  border-color: var(--clr-accent-200);
+}
+
 @media (max-width: 476px) {
   .i-burger {
     display: -webkit-box;
