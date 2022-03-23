@@ -389,7 +389,6 @@ main {
 
 .login-field input {
   outline: none;
-  border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: solid 1px black;
