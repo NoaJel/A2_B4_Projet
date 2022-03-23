@@ -5,7 +5,6 @@
     <meta charset="description" content="Page where you create internship proposal">
     <link rel="stylesheet" href="./scss/internship_proposal.scss">
     </head>
-
 <body>
         <?php require "header-stu.php"?>
         <main>

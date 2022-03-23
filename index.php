@@ -2,7 +2,6 @@
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
     <link rel="stylesheet" href="./scss/index.css" type="text/css" />
-    <script src="./js/header-stu.js" defer></script>
 </head>
 <body>
     <?php require_once "header-stu.php" ?>
