@@ -23,15 +23,6 @@
     --ff-accent: "intro-bold", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--ff-accent);
-}
-
 body {
     font-family: var(--ff-primary);
 
@@ -46,6 +37,15 @@ body {
 
     //box-sizing: content-box;
     //border: solid 2px orange;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-accent);
 }
 
 main {

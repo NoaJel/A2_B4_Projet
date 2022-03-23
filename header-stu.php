@@ -19,16 +19,16 @@
     <div id="burger-overlay"></div>
 
     <div class="modal-container" id="modal-container">
-        <header class="modal-header">
+        <div class="modal-header">
             <h2 class="title">Welcome</h2>
             <button class="modal-close-btn" data-modal-close type="button">
                 <span class="cross">&#10006;</span>
                 <span class="cross-bg"></span>
             </button>
-        </header>
-        <main class="modal-main">
-            <h3>Login to your account!</h3>
+        </div>
+        <div class="modal-main">
             <form action="" method="POST">
+                <legend><h3>Login to your account!</h3></legend>
                 <div class="login-field">
                     <label for="login-email"></label>
                     <input type="email" name="login_email" class="login-input" id="login-email" placeholder="Email" />
@@ -37,11 +37,11 @@
                     <label for="login-password"></label>
                     <input type="password" name="login_password" class="login-input" id="login-password" placeholder="Password" />
                 </div>
-                <button type="submit" class="login-input">Login</button>
+                <button type="submit" class="login-input" id="login-btn">Login</button>
             </form>
-        </main>
-        <footer class="modal-footer">
-        </footer>
+        </div>
+        <div class="modal-footer">
+        </div>
     </div>
     <div id="modal-overlay"></div>
 </header>

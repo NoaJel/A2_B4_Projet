@@ -4,11 +4,6 @@ const modalOverlay = document.getElementById("modal-overlay");
 
 const loginInputs = document.querySelectorAll(".login-input");
 
-// toggleFocus(loginInputs);
-
-loginInputs.forEach(element => {
-    element.setAttribute("tabindex", "-1");
-});
 
 openLoginModal.forEach(button => {
     button.addEventListener("click", () => {
