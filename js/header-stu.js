@@ -9,7 +9,7 @@ const otherFields = document.querySelectorAll("body *:not(.login-input)");
 function disableFocus(elements) {
     elements.forEach(element => {
         element.setAttribute("tabindex", "-1");
-        element.setAttribute("aria-disabled", "");
+        element.setAttribute("aria-disabled", "true"); // aria-disabled indicates the element as perceivable but disabled, so it is not editable or otherwise operable
     });
 }
 
