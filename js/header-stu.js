@@ -2,16 +2,32 @@ const openLoginModal = document.querySelectorAll("[data-modal-target]");
 const closeLoginModal = document.querySelectorAll("[data-modal-close]");
 const modalOverlay = document.getElementById("modal-overlay");
 
+// This section is used to disable the focus of the elements that are not part of the modal; this is especially important for screen readers
 const loginInputs = document.querySelectorAll(".login-input");
+const otherFields = document.querySelectorAll("body *:not(.login-input)");
 
+function disableFocus(elements) {
+    elements.forEach(element => {
+        element.setAttribute("tabindex", "-1");
+        element.setAttribute("aria-disabled", "");
+    });
+}
+
+function enableFocus(elements) {
+    elements.forEach(element => {
+        element.removeAttribute("tabindex");
+        element.removeAttribute("aria-disabled");
+    });
+}
+
+
+
+disableFocus(loginInputs); // disable it on the load of the page as the login modal is not opened by default
 
 openLoginModal.forEach(button => {
     button.addEventListener("click", () => {
         const modal = document.querySelector(button.dataset.modalTarget);
         openModal(modal);
-        loginInputs.forEach(element => {
-            element.removeAttribute("tabindex");
-        });
     });
 });
 
@@ -19,9 +35,6 @@ closeLoginModal.forEach(button => {
     button.addEventListener("click", () => {
         const modal = button.closest(".modal-container");
         closeModal(modal);
-        loginInputs.forEach(element => {
-            element.setAttribute("tabindex", "-1");
-        });
     });
 });
 
@@ -37,12 +50,18 @@ function openModal(modal) {
     if (modal == null) return;
     modal.classList.add("active");
     modalOverlay.classList.add("active");
+
+    enableFocus(loginInputs);
+    disableFocus(otherFields);
 }
 
 function closeModal(modal) {
     if (modal == null) return;
     modal.classList.remove("active");
     modalOverlay.classList.remove("active");
+
+    enableFocus(otherFields);
+    disableFocus(loginInputs);
 }
 
 
