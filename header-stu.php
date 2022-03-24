@@ -18,7 +18,7 @@
     </div>
     <div id="burger-overlay"></div>
 
-    <div class="modal-container" id="modal-container">
+    <div class="modal-container" id="modal-container" role="dialog" aria-modal="true">
         <div class="modal-header">
             <h2 class="title">Welcome</h2>
             <button class="modal-close-btn" data-modal-close type="button">
