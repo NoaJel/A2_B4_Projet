@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-200: #faf6d1;
+  --clr-primary-500: #824936;
+  --clr-primary-700: #4b4737;
+  --clr-accent-200: #f1d900;
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #222c2a;
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-accent: "intro-bold", sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-accent);
+}
+
+main {
+  padding: 6rem 2rem 3rem 2rem;
+}
+
+body {
+  padding-left: calc(100vw - 100%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/* h1
+{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 3.5rem;
+}
+
+input
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-radius: 20px ;
+}
+
+input[id="company"]
+{
+    width: 45rem;
+}
+
+input[id="domain"]
+{
+    width: 35rem;
+}
+
+input[id="profile"]
+{
+    width: 35rem;
+}
+
+textarea
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: start;
+    width: 80rem;
+    height: 15rem;
+
+}
+
+input[id="sub"]
+{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 20px;
+
+}
+
+table
+{
+    border-collapse : separate;
+    
+}
+
+td
+{
+    padding-right: 70px;
+} */
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+:-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+::-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+::placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.75rem;
+}
+
+.form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-field label {
+  font-size: 1.1rem;
+}
+
+.form-field input,
+.form-field textarea {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: solid 1px black;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.05rem;
+}
+
+.form-field textarea {
+  resize: vertical;
+  border-bottom-right-radius: 0;
+}
+
+.form-field textarea,
+.form-field textarea::-webkit-input-placeholder {
+  font-family: var(--ff-primary);
+}
+
+.form-field textarea,
+.form-field textarea:-ms-input-placeholder {
+  font-family: var(--ff-primary);
+}
+
+.form-field textarea,
+.form-field textarea::-ms-input-placeholder {
+  font-family: var(--ff-primary);
+}
+
+.form-field textarea,
+.form-field textarea::placeholder {
+  font-family: var(--ff-primary);
+}
+
+.form-field input::-webkit-input-placeholder,
+.form-field textarea::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.form-field input:-ms-input-placeholder,
+.form-field textarea:-ms-input-placeholder {
+  text-align: center;
+}
+
+.form-field input::-ms-input-placeholder,
+.form-field textarea::-ms-input-placeholder {
+  text-align: center;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  text-align: center;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border: solid 2px var(--clr-accent-200);
+}
+
+#submit-btn {
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-color: black;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-radius: 20px;
+  background-color: var(--clr-accent-200);
+}
+
+#submit-btn:hover,
+#submit-btn:focus {
+  border: solid 2px var(--clr-primary-200);
+}
+/*# sourceMappingURL=internship_proposal.css.map */
