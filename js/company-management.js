@@ -11,24 +11,31 @@ function httpGet(theUrl)
 
 function reset()
 {
-    $('#selectVille')
+    $('#city')
     .empty()
-    .append(new Option('...', '0'));
+    .append(new Option('-- Choose your city --', '0'));
 }
 
-$(document).ready(function () {
-    $('#codePostal').keyup(function () {
+$(document).ready(function() {
+    $('#codePostal').keyup(function() {
         var content = $('#codePostal').val();
-        alert(content);
         if ((content.length == 5) && (isInt(parseInt(content)))){
 
             var result = httpGet("https://apicarto.ign.fr/api/codes-postaux/communes/" + content);
             var result_json = JSON.parse(result);
             reset();
-
-                for (let index = 0; index < result_json.length; index++) {
-                    $('#selectVille').append(new Option(result_json[index].nomCommune, result_json[index].nomCommune));    //name puis value les paramètres
-                    }
+                if (result_json.length > 1)
+                {
+                    for (let index = 0; index < result_json.length; index++) {
+                        $('#city').append(new Option(result_json[index].nomCommune, result_json[index].nomCommune));    //name puis value les paramètres
+                        }
+                }
+                else
+                {
+                    $('#city')
+                    .empty()
+                    .append(new Option(result_json[0].nomCommune, result_json[0].nomCommune));
+                }
             
         }  
     });
