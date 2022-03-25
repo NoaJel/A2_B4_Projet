@@ -8,7 +8,7 @@
 }
 
 :root {
-  --clr-primary-300: #b1ab99;
+  --clr-primary-200: #faf6d1;
   --clr-primary-500: #824936;
   --clr-primary-700: #4b4737;
   --clr-accent-200: #f1d900;
@@ -16,15 +16,6 @@
   --clr-neutral-900: #222c2a;
   --ff-primary: "Open Sans", sans-serif;
   --ff-accent: "intro-bold", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--ff-accent);
 }
 
 body {
@@ -40,6 +31,15 @@ body {
   max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-accent);
 }
 
 main {
