@@ -2,100 +2,51 @@
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
     <link rel="stylesheet" href="./scss/company-management.css" type="text/css" />
-    <script src="./js/header-stu.js" defer></script>
-    <script src=".js/company-management.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <script type="text/javascript" src="./js/header-stu.js" defer></script>
+    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="./js/company-management.js" defer></script> 
 </head>
 <body>
     <?php require_once "header-stu.php" ?>
-    <main>
-        <h1>Company</h1>
-        <form action="./php code file/companyAdd.php" method="Post">
-            <fieldset>
-                <label>Name</label><br>
-                <input type="text" name="name"><br><br>
-
-                <label>business_sector</label><br>
-                <input type="text" name="business"><br><br>
-
-                <label>Number interns accepted</label><br>
-                <input type="text" name="interns"><br><br>
-
-                <label>Country</label><br>
-                <input type="text" name="country"><br><br>
-
-                <label>Code postal :</label><br>
-				<input name="postal" type="text" id="codePostal" inputmode="numeric" pattern="[0-9]{5}"><br><br>
-                
-                <label>Ville</label><br>
-                <input name="city" type="text"><br><br>
-                <!-- <label>Ville :</label><br>
-				<select id="selectVille">
-					<option id="ville" value ="">...</option>
-				</select><br><br> -->
-
-                <label>address</label><br>
-                <input name="address" type="text"><br><br>
-
-                <label>address number</label><br>
-                <input name="number" type="text"><br><br>
-
-                <label>Adresse complement</label><br>
-                <input name="complement" type="text"><br><br>
-
-                <input type="submit" value="Validate">
-                <input type="reset" value="Reinitialise">
-
-            </fieldset>
-        </form>
-    </main>
-    <!-- <main>
-        <h1 class="main-title">Autocomplétion des villes</h1>
-        <form class="main-form" action="#" method="post">
-            <div class="form-field">
-                <label>
-                    <h2>Code postal</h2>
-                    <input data-postal-code type="text" name="code-postal" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required />
-                </label>
-        <form action="" method="POST">
-            <div class="parent1">
-                <legend><h1>Company Management</h1></legend>
-                <div class="form-img">
-                    <input type="file">
-                </div>    
-            </div>
+     <main>
+        <form class="main-form" action="./php/companyAdd.php" method="post">
             <div class="parent2">
                 <div class="form-field">
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your company name" required>
+                    <input name="name" type="text" id="name" placeholder="Your company name" required>
                 </div>
                 <div class="form-field">
                     <label for="domain">Domain of activity</label>
-                    <input type="text" id="domain" placeholder="Domains (e.g. web dev, pentesting, etc.)" required>
+                    <input name="business" type="text" id="domain" placeholder="Domains (e.g. web dev, pentesting, etc.)" required>
+                </div>
+                <div class="form-field">
+                    <label for="interns_accepted">number of interns accepted</label>
+                    <input name="interns" type="text" id="interns" placeholder="number of interns the company allowed" required>
                 </div>
                 <div class="form-field">
                     <label for="country">Country</label>
-                    <input type="text" id="country" placeholder="" required>
+                    <input name="country" type="text" id="country" placeholder="" required>
                 </div>
                 <div class="form-field">
                     <label for="postalCode">Postal Code</label>
-                    <input type="text" id="postalCode" placeholder="" required>
+                    <input name="postal" type="text" id="codePostal" placeholder="" required>
                 </div>
+
                 <div class="form-field">
                     <label for="city">City</label>
-                    <input type="text" id="city" placeholder="" required>
+				    <select name="city" id="city"></select>
                 </div>
                 <div class="form-field">
                     <label for="address">Address</label>
-                    <input type="text" id="address" placeholder="" required>
+                    <input name="address" type="text" id="address" placeholder="" required>
                 </div>
                 <div class="form-field">
                     <label for="addressNumber">Address number</label>
-                    <input type="text" id="addressNumber" placeholder="" required>
+                    <input name="number" type="text" id="addressNumber" placeholder="" required>
                 </div>
                 <div class="form-field">
                     <label for="addressComplement">Address complement</label>
-                    <input type="text" id="addressComplement" placeholder="" required>
+                    <input name="complement" type="text" id="addressComplement" placeholder="">
                 </div>
                 <div class="form-field">
                     <label for="tags">Add tags</label>
@@ -110,7 +61,7 @@
                 </div>
             </div>
         </form>
-    </main>
+    </main> 
     <?php require_once "footer.php" ?>
 </body>
 </html>
