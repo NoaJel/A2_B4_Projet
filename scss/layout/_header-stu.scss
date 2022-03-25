@@ -1,4 +1,4 @@
-@import "./common";
+@use "../base/" as *;
 
 .header {
     position: fixed;
@@ -157,7 +157,7 @@
         }
         .i-burger span::before {
             width: 115%;
-            transform: translateX(-1 * (50% + (100%/15))) translateY(-300%);
+            transform: translateX(calc(-1 * (50% + (100%/15)))) translateY(-300%);
         }
         .i-burger span::after {
             width: 85%;
@@ -169,11 +169,11 @@
         }
             .i-burger.opened span::before {
                 width: 90%;
-                transform: translateX(-1 * (50% + (100%/15))) rotateZ(45deg);
+                transform: translateX(calc(-1 * (50% + (100%/15)))) rotateZ(45deg);
             }
             .i-burger.opened span::after {
                 width: 90%;
-                transform: translateX(-1 * (50% + (100%/15))) rotateZ(-45deg);
+                transform: translateX(calc(-1 * (50% + (100%/15)))) rotateZ(-45deg);
             }
 
     #burger-overlay {
