@@ -16,27 +16,26 @@ function reset()
     .append(new Option('-- Choose your city --', '0'));
 }
 
-$(document).ready(function() {
-    $('#codePostal').keyup(function() {
-        var content = $('#codePostal').val();
+$(document).ready(() => {
+    $('#postal-code').keyup(() => {
+        var content = $('#postal-code').val();
         if ((content.length == 5) && (isInt(parseInt(content)))){
 
             var result = httpGet("https://apicarto.ign.fr/api/codes-postaux/communes/" + content);
             var result_json = JSON.parse(result);
             reset();
-                if (result_json.length > 1)
-                {
-                    for (let index = 0; index < result_json.length; index++) {
-                        $('#city').append(new Option(result_json[index].nomCommune, result_json[index].nomCommune));    //name puis value les paramètres
-                        }
+            if (result_json.length > 1)
+            {
+                for (let index = 0; index < result_json.length; index++) {
+                    $('#city').append(new Option(result_json[index].nomCommune, result_json[index].nomCommune)); // name puis value les paramètres
                 }
-                else
-                {
-                    $('#city')
-                    .empty()
-                    .append(new Option(result_json[0].nomCommune, result_json[0].nomCommune));
-                }
-            
+            }
+            else
+            {
+                $('#city')
+                .empty()
+                .append(new Option(result_json[0].nomCommune, result_json[0].nomCommune));
+            }
         }  
     });
 });

@@ -15,4 +15,5 @@
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css" />
     <!-- /FONTAWESOME -->
-    <script src="./js/header-stu.js" defer></script>
+    <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="./js/header-stu.js" defer></script>
