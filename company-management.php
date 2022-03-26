@@ -1,7 +1,7 @@
 <?php require_once "head.php" ?>
     <meta name="description" content="Add or edit a company to uLink." />
     <title>uLink - Company Management</title>
-    <link rel="stylesheet" href="./scss/pages/company-management.css" type="text/css" />
+    <link rel="preload" as="style" href="./scss/pages/company-management.css" type="text/css" onload="this.rel='stylesheet'" />
     <script type="text/javascript" src="./js/company-management.js" defer></script> 
 </head>
 <body>
@@ -44,7 +44,7 @@
             <div class="form-field">
                 <label for="city">City</label>
                 <select name="city" id="city">
-                    <option aria-placeholder="Enter your postal code first (autocompletion)">-- Enter your postal code first (autocompletion) --</option>
+                    <option>-- Enter your postal code first (autocompletion) --</option>
                 </select>
             </div>
             <div class="form-field">

@@ -1,7 +1,7 @@
 <header class="header">
     <a href="/"><img src="./images/logo.png" alt="uLink logo" class="ulink-logo" /></a>
     <nav class="parent-burger">
-        <button class="i-burger" data-burger-toggle type="button">
+        <button type="button" data-burger-toggle class="i-burger" alt="burger menu" aria-label="burger menu">
             <span></span> <!-- middle bar -->
         </button>
         <ul class="nav-links" data-nav-vertical>
