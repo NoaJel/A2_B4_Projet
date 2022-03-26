@@ -86,6 +86,12 @@ h1 {
   margin: 1rem;
   border-radius: 1rem;
   background-color: var(--clr-primary-200);
+  border: 2px solid var(--clr-accent-200);
+}
+
+.details:hover,
+.details:focus {
+  border-color: var(--clr-primary-200);
 }
 
 .details label[class=title] {
