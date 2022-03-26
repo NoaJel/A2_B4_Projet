@@ -11,7 +11,7 @@
         </ul>
     </nav>
     <div class="nav-icons">
-        <a href="#" class="notif-icon"><i class="fas fa-bell"></i></a>
+        <a href="#" class="notif-icon" alt="notif center" aria-label="notif center"><i class="fas fa-bell"></i></a>
         <button type="button" data-modal-target="#modal-container" class="login-btn" >
             Login <i class="fas fa-user-alt"></i>
         </button>
