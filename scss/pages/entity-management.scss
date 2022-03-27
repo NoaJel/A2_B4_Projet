@@ -1,0 +1,87 @@
+@use "../base/" as *;
+@use "../components/button" as *;
+
+h1 {
+    margin-bottom: 2.5rem;
+}
+
+// flexbox related changes
+.flex-row-container {
+    display: flex;
+    align-items: center;
+
+    &.main {
+        gap: 1.5rem 3rem;
+    }
+
+    &.top-section {
+        gap: 2.5rem;
+        font-size: 1.1rem;
+    }
+        &.search-section {
+            gap: 1rem;
+        }
+
+    &.sort-entity {
+        gap: 1.5rem;
+    }
+
+    &.cards-section {
+        // flex-direction: row-reverse;
+        gap: 2.5rem 5rem;
+        flex-wrap: wrap;
+    }
+        &.card-header {
+            justify-content: space-between;
+        }
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    &.entity-card {
+        gap: 0.5rem;
+    }
+}
+
+.top-section input {
+    padding: 0.5rem;
+    font-size: 1.05rem;
+}
+
+.add-entity {
+    @include link-reset;
+}
+
+.sort-entity {
+    min-width: calc(100% / 3);
+    width: 50rem;
+}
+
+.sort-btn {
+    @include btn-reset;
+    @include btn;
+}
+    .sort-btn:focus,
+    .sort-btn:hover {
+        @include btn-focus-hover;
+    }
+
+.entity-card {
+    width: fit-content;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+}
+    .entity-card img {
+        width: 18rem;
+        padding: 0 4rem;
+    }
+    .entity-card p {
+        width: 0; // sets the width to 0 so that it is the image that will be the biggest element of the card -> fit-content for the card and it takes the size of the image
+        min-width: 100%; // takes up the whole available space left
+    }
+
+.card-header {
+    padding-inline: 0.25rem;
+}

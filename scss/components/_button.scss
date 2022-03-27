@@ -1,14 +1,14 @@
-@mixin submit-btn {
+@mixin btn {
     padding: 1rem 0;
 
     border-color: black;
+    border-style: solid;
     border-left-width: 1px;
     border-top-width: 1px;
-    border-radius: 20px;
 
     background-color: var(--clr-accent-200);
 }
 
-@mixin submit-btn-focus-hover {
+@mixin btn-focus-hover {
     border: solid 2px var(--clr-primary-200);
 }
