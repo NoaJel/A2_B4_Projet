@@ -1,1 +1,77 @@
+<FilesMatch "\.(htaccess|htpasswd|htgroup)$">
+	Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+# disable directory indexing
+Options All -Indexes
+
+# defines the default index page
 DirectoryIndex index.php
+
+# defines a custom 404 error page
+ErrorDocument 404 /404.html
+
+# pass the default character set
+AddDefaultCharset utf-8
+
+# set the default language
+DefaultLanguage en-US
+
+# disable the server signature
+ServerSignature Off
+
+# set the server timezone
+SetEnv FR Europe/Paris
+
+# cache-control headers
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|woff2?|ico|jpe?g|png|gif|swf|gz|pdf|flv|swf)$">
+        #Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    <FilesMatch "\.(js)$">
+        #Header set Cache-Control "max-age=31536000, private"
+    </FilesMatch>
+    <FilesMatch ".(xml|txt)$">
+        #Header set Cache-Control "max-age=172800, public, must-revalidate"
+    </FilesMatch>
+    <FilesMatch "\.(html|htm)$">
+        #Header set Cache-Control "max-age=7200, public"
+    </FilesMatch>
+    # disable caching for scripts and other dynamic files :
+    <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+        #Header unset Cache-Control
+    </FilesMatch>
+</IfModule>
+
+# compress files before sending them
+<IfModule mod_deflate.c="">
+	<FilesMatch ".(js|css|.jpg|.gif|.png|.tiff|.ico)$"="">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</Ifmodule>
+
+# stop hotlinking and serve alternate content
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond %{HTTP_REFERER} !^$
+	RewriteCond %{HTTP_REFERER} !^https://(www\.)?ulink\.com/.*$ [NC]
+	RewriteRule .*\.(gif|jpg)$ - [F,L]
+</IfModule>
+
+# deny access to known damaging bots
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^Anarchie [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ASPSeek [OR]
+RewriteCond %{HTTP_USER_AGENT} ^attach [OR]
+RewriteCond %{HTTP_USER_AGENT} ^autoemailspider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xenu [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus.*Webster [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.* - [F,L]
+
+# secure directory by disabling script execution
+AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
+Options -ExecCGI

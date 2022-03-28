@@ -1,5 +1,3 @@
-@import "./reset";
-
 *,
 *::before,
 *::after {
@@ -9,7 +7,8 @@
 }
 
 :root {
-    --clr-primary-300: #b1ab99;
+    // --clr-primary-300: #b1ab99;
+    --clr-primary-200: #faf6d1;
     --clr-primary-500: #824936;
     --clr-primary-700: #4b4737;
     
@@ -20,15 +19,6 @@
 
     --ff-primary: "Open Sans", sans-serif;
     --ff-accent: "intro-bold", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: var(--ff-accent);
 }
 
 body {
@@ -47,7 +37,22 @@ body {
     //border: solid 2px orange;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-accent);
+}
+
 main {
     //flex-grow: 1;
-    padding: 6rem 2rem 3rem 2rem;
+    padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+::placeholder {
+    opacity: 1;
+    color: grey;
+    font-size: 1rem;
 }
