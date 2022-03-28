@@ -48,5 +48,11 @@ h6 {
 
 main {
     //flex-grow: 1;
-    padding: 6rem 2rem 3rem 2rem;
+    padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+::placeholder {
+    opacity: 1;
+    color: grey;
+    font-size: 1rem;
 }
