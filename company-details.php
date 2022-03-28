@@ -10,22 +10,22 @@
         <div class="parent">
             <div class="sous-parent-1">
                 <div class="child">
-                    <label class="company" for="company's name">Ulink</label>
+                    <h2 class="company">Ulink</h2>
                 </div>
                 <div class="child">
                     <i class="fas fa-map-marker-alt"> :</i>
-                    <label for="address">2 All. des Foulons, 67380 Lingolsheim</label>
+                    2 All. des Foulons, 67380 Lingolsheim
                 </div>
                 <div class="child">
                     <i class="fas fa-phone"> :</i>
-                    <label for="phone">0306236589</label>
+                    0306236589
                 </div>
                 <div class="child">
                     <i class="fas fa-at"> :</i>
-                    <label for="email">contact@ulink.fr</label>
+                    contact@ulink.fr
                 </div>
                 <div class="child-ranking">
-                   <label for="ranking">Users ranking</label>
+                   Users ranking
                    <div>
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
@@ -39,28 +39,28 @@
             <div class="sous-parent-2">
                 <div class="details">
                     <i class="fas fa-book-open"></i>
-                    <label class="title" for="category">Category</label>
-                    <label class="info" for="category-name">media</label>
+                    <section class="title" for="category">Category</section>
+                    <section class="info" for="category-name">media</section>
                 </div>
                 <div class="details">
                     <i class="fas fa-pencil-ruler"></i>
-                    <label class="title" for="activity">Activity</label>
-                    <label class="info" for="activity-name">Application software publishing</label>
+                    <section class="title" for="activity">Activity</section>
+                    <section class="info" for="activity-name">Application software publishing</section>
                 </div>
                 <div class="details">
                     <i class="fas fa-user-friends"></i>
-                    <label class="title" for="staff">Staff</label>
-                    <label class="info" for="staff-number">49</label>
+                    <section class="title" for="staff">Staff</section>
+                    <section class="info" for="staff-number">49</section>
                 </div>
                 <div class="details">
                     <i class="fas fa-dollar-sign"></i>
-                    <label class="title" for="capital">Capital</label>
-                    <label class="info" for="amount-of-capital">14 000 000 €</label>
+                    <section class="title" for="capital">Capital</section>
+                    <section class="info" for="amount-of-capital">14 000 000 €</section>
                 </div>
                 <div class="details">
                     <i class="fas fa-user-graduate"></i>
-                    <label class="title" for="intern">Interns already hired</label>
-                    <label class="info" for="interns-already-hired">12</label>
+                    <section class="title" for="intern">Interns already hired</section>
+                    <section class="info" for="interns-already-hired">12</section>
                 </div>
             </div>
         </div>

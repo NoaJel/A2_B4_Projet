@@ -21,7 +21,7 @@ h1 {
     width: 330px;
 }
 
-.child label[class="company"] {
+.child section[class="company"] {
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -56,13 +56,13 @@ h1 {
   border-color: var(--clr-primary-200);
 }
 
-.details label[class="title"] {
+.details section[class="title"] {
     font-size: 1.4rem;
     margin-top: 1rem;
     color: var(--clr-primary-700);
 }
 
-.details label[class="info"] {
+.details section[class="info"] {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 1rem;

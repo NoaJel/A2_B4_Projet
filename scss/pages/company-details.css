@@ -37,7 +37,25 @@ h6 {
 }
 
 main {
-  padding: 6rem 2rem 3rem 2rem;
+  padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+::placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
 }
 
 h1 {
@@ -61,7 +79,7 @@ h1 {
   width: 330px;
 }
 
-.child label[class=company] {
+.child section[class=company] {
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -94,13 +112,13 @@ h1 {
   border-color: var(--clr-primary-200);
 }
 
-.details label[class=title] {
+.details section[class=title] {
   font-size: 1.4rem;
   margin-top: 1rem;
   color: var(--clr-primary-700);
 }
 
-.details label[class=info] {
+.details section[class=info] {
   font-size: 1.2rem;
   font-weight: bold;
   margin-top: 1rem;
