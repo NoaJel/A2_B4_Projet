@@ -1,8 +1,8 @@
 @use "../base/" as *;
 
 h1 {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 .parent {
@@ -75,4 +75,44 @@ h1 {
     margin-top: 0.5rem;
     color: var(--clr-primary-700);
 }
+
+.internship {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 4.5rem;
+}
+
+.internship a {
+    @include link-reset;
+
+    display: flex;
+    flex-direction: row;   
+    width: 60rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--clr-primary-200);
+    border: 2px solid var(--clr-accent-200);
+
+    transition:
+                background-color 0.2s ease-out,
+                color 0.05s ease-out,
+                scale 0.2s ease-in-out
+            ;
+    
+}
+
+.internship a:hover,
+.internship a:focus {
+    border-color: var(--clr-primary-700);
+    background-color: var(--clr-primary-700);
+    color: var(--clr-primary-200);
+}
+
+.internship i {
+    font-size: 2rem;
+}
+
+
 

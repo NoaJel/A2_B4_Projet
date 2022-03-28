@@ -33,7 +33,7 @@
                        <i class="fas fa-star"></i>
                        <i class="fas fa-star"></i>
                    </div>
-                   <a href="">leave a comment →</a>
+                   <a href="#">leave a comment →</a>
                 </div>
             </div>
             <div class="sous-parent-2">
@@ -65,6 +65,9 @@
             </div>
         </div>
         <h1>Internship proposal</h1>
+        <div class="internship">
+            <a class="link" href="internship_proposal.php"><i class="fas fa-plus"></i></a>
+        </div>
     </main>
     <?php require_once "footer.php" ?>
 </body>
