@@ -2,6 +2,7 @@
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
     <link rel="stylesheet" href="./scss/pages/company-details.css" type="text/css" />
+    <script type="text/javascript" src="./js/comment-modal.js" defer></script>
 </head>
 <body>
     <?php require_once "header-stu.php" ?>
@@ -25,15 +26,16 @@
                     contact@ulink.fr
                 </div>
                 <div class="child-ranking">
-                   Users ranking
-                   <div>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                       <i class="fas fa-star"></i>
-                   </div>
-                   <a href="#">leave a comment →</a>
+
+                    Users ranking
+                    <div class="comment-btn">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <button data-comment-target="#comment-container" class="comment-btn">leave a comment →</button>
+                    </div>
                 </div>
             </div>
             <div class="sous-parent-2">
@@ -68,6 +70,33 @@
         <div class="internship">
             <a class="link" href="internship_proposal.php"><i class="fas fa-plus"></i></a>
         </div>
+        <div class="comment-container" id="comment-container" role="dialog" aria-modal="true">
+            <div class="comment-header">
+                <h2 class="title">Leave a comment !</h2>
+                <button class="comment-close-btn" data-comment-close type="button">
+                    <span class="cross">&#10006;</span>
+                    <span class="cross-bg"></span>
+                </button>
+            </div>
+            <div class="comment-main">
+                <form action="" method="POST">
+                    <div class="star-rank">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="comment-field">
+                        <label for="comment"></label>
+                        <textarea name="comment" class="comment-input" id="comment" placeholder="Comment"></textarea>
+                    </div>
+                    <button type="submit" class="comment-input" id="comment-btn">Send</button>
+                </form>
+            </div>
+            <div class="comment-footer"></div>
+        </div>
+        <div id="comment-overlay"></div>
     </main>
     <?php require_once "footer.php" ?>
 </body>
