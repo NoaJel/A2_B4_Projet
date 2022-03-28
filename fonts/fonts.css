@@ -1,25 +1,10 @@
-@font-face {
+/* @font-face {
     font-family: "Futura Bold";
     src: url("futura_bold-webfont.woff2") format("woff2"),
          url("futura_bold-webfont.woff") format("woff");
     font-weight: bold;
     font-style: normal;
-}
-
-/* @font-face {
-    font-family: "Intro";
-    src: url("intro-webfont.woff2") format("woff2"),
-         url("intro-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: "Intro";
-    src: url("intro_bold_regular-webfont.woff2") format("woff2"),
-         url("intro_bold_regular-webfont.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
+    font-display: swap;
 } */
 
 /* @font-face {
@@ -28,6 +13,7 @@
          url("intro-trial-tn-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +22,7 @@
          url("intro-trial-exlt-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -44,6 +31,7 @@
          url("intro-trial-lt-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -52,6 +40,7 @@
          url("intro-trial-rg-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -60,6 +49,7 @@
          url("intro-trial-md-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -68,6 +58,7 @@
          url("intro-trial-smbd-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 } */
 
 @font-face {
@@ -76,6 +67,7 @@
          url("intro-trial-bd-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* @font-face {
@@ -84,4 +76,5 @@
          url("intro-trial-bk-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 } */

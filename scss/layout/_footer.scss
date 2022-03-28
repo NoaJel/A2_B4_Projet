@@ -1,4 +1,4 @@
-@import "./common";
+@use "../base/" as *;
 
 footer {
     position: fixed;
