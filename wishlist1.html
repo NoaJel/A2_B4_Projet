@@ -1,0 +1,64 @@
+<section class="carousel">
+    <ul class="carousel-items">
+        <li class="carousel-item">
+            <div class="card">
+                <h2 class="card-title">My awesome article</h2>
+                <img src="https://placeimg.com/572/322/animals" />
+                <div class="card-content">
+                    <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </li>
+        <li class="carousel-item">
+            <div class="card">
+                <h2 class="card-title">Just another awesome article</h2>
+                <img src="https://placeimg.com/572/322/animals" />
+                <div class="card-content">
+                    <p>Mewl for food at 4am chase mice. Scratch leg; meow for can opener to feed me purr when being pet nya nya nyan catasstrophe, fooled again thinking the dog likes me cough hairball on conveniently placed pants.</p>
+                    <a href="#" class="button">Read more</a>
+                </div>
+            </div>
+        </li>
+          <li class="carousel-item"> ... </li>   
+          <li class="carousel-item"> ... </li>
+          <li class="carousel-item"> ... </li> 
+          . . .
+    </ul>
+</section>
+
+<style>
+    .carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+.carousel-item {
+    margin-left: 1rem;
+}
+
+.carousel-item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    margin-left: 1rem;
+}
+
+.carousel-item {
+    flex: 1 0 450px;
+    margin-left: 1rem;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
