@@ -83,6 +83,10 @@ h1 {
     height: 4.5rem;
 }
 
+.internship i {
+    color: var(--clr-primary-700);
+}
+
 .internship a {
     @include link-reset;
 
@@ -107,6 +111,10 @@ h1 {
 .internship a:focus {
     border-color: var(--clr-primary-700);
     background-color: var(--clr-primary-700);
+}
+
+.internship a:focus i,
+.internship a:hover i {
     color: var(--clr-primary-200);
 }
 
