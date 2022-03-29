@@ -1,0 +1,14 @@
+@mixin submit-btn {
+    padding: 1rem 0;
+
+    border-color: black;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-radius: 20px;
+
+    background-color: var(--clr-accent-200);
+}
+
+@mixin submit-btn-focus-hover {
+    border: solid 2px var(--clr-primary-200);
+}
