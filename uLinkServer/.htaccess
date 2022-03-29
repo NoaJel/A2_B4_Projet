@@ -29,20 +29,20 @@ SetEnv FR Europe/Paris
 # cache-control headers
 <IfModule mod_headers.c>
     <FilesMatch "\.(css|woff2?|ico|jpe?g|png|gif|swf|gz|pdf|flv|swf)$">
-        Header set Cache-Control "max-age=31536000, public"
+        #Header set Cache-Control "max-age=31536000, public"
     </FilesMatch>
     <FilesMatch "\.(js)$">
-        Header set Cache-Control "max-age=31536000, private"
+        #Header set Cache-Control "max-age=31536000, private"
     </FilesMatch>
     <FilesMatch ".(xml|txt)$">
-        Header set Cache-Control "max-age=172800, public, must-revalidate"
+        #Header set Cache-Control "max-age=172800, public, must-revalidate"
     </FilesMatch>
     <FilesMatch "\.(html|htm)$">
-        Header set Cache-Control "max-age=7200, public"
+        #Header set Cache-Control "max-age=7200, public"
     </FilesMatch>
     # disable caching for scripts and other dynamic files :
     <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
-        Header unset Cache-Control
+        #Header unset Cache-Control
     </FilesMatch>
 </IfModule>
 
