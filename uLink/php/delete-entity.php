@@ -1,5 +1,5 @@
 <?php
-include("database_connection.php");
+require_once "database_connection.php";
 if (!empty($_GET['action']) and $_GET["action"] == "delete")
 {
     $param = $_GET["company_name"];
@@ -13,3 +13,4 @@ if (!empty($_GET['action']) and $_GET["action"] == "delete")
     $request3->execute(array('company_id'=>$row['company_id']));
     header("location:./entity-management.php");
 }
+?>
