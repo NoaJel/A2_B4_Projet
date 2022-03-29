@@ -1,0 +1,99 @@
+@use "../base/" as *;
+@use "../components/submit-btn" as *;
+
+$rMargin: 10rem;
+
+body {
+    padding-left: calc(100vw - 100%);
+    box-sizing: content-box;
+}
+
+:not(body) {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 1.75rem;
+}
+
+h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input, 
+.form-field textarea,
+.form-field select {
+    @include input-reset;
+
+    margin: 1rem $rMargin 1rem 0;
+    padding: 1rem;
+
+    border-radius: 20px;
+
+    font-size: 1.05rem;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 3.625rem;
+    border-bottom-right-radius: 0;
+}
+
+.form-submit {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 1.5rem;
+    margin-right: $rMargin;
+}
+
+    #submit-btn {
+        @include submit-btn;
+        width: 15rem;
+        
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+        #submit-btn:hover,
+        #submit-btn:focus {
+            @include submit-btn-focus-hover;
+        }
+
+.form-submit input {
+    margin: 1rem $rMargin 1rem 0;
+    padding: 1rem;
+
+    border-radius: 20px;
+
+    font-size: 1.05rem;
+    width: 200px;
+}
+
+.form-field input,
+.form-field textarea,
+.form-submit input {
+    font-family: var(--ff-primary);
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-submit input:focus {
+    border: solid 2px var(--clr-accent-200);
+}
+
+.form-field label {
+    font-size: 1.1rem;
+}
