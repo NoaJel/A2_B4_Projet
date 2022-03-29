@@ -1,2 +1,2 @@
-# ignore any file within the logs folder
-*/logs/
+**/logs/
+**/temp/
