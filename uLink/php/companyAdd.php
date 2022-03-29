@@ -1,9 +1,9 @@
 <?php
-    echo "TABITE";
+
     include("database_connection.php");
     if(isset($_POST["insert"]))
     {
-        echo "MABITE";
+
         $request = $connect->prepare("INSERT INTO company (name, business_sector, nb_interns_accepted) VALUES (:name, :business, :interns)");
         $request->execute(array('name'=>$_POST['name'], 'business'=>$_POST['business'], 'interns'=>$_POST['interns'])); 
 
