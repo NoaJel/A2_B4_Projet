@@ -107,6 +107,11 @@ h1 {
   border: 2px solid var(--clr-accent-200);
 }
 
+.star-avg i {
+  font-size: 1.2rem;
+  color: var(--clr-accent-200);
+}
+
 .child-ranking button:hover,
 .child-ranking button:focus {
   border-color: var(--clr-primary-200);
@@ -158,9 +163,8 @@ h1 {
 
 .internship {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  height: 4.5rem;
 }
 
 .internship i {
@@ -171,8 +175,8 @@ h1 {
   color: inherit;
   text-decoration: none;
   display: flex;
-  flex-direction: row;
-  width: 60rem;
+  flex-direction: column;
+  height: 4.5rem;
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
@@ -285,6 +289,12 @@ h1 {
   pointer-events: all;
 }
 
+.comment-rate {
+  display: flex;
+  max-width: 60rem;
+  width: 80%;
+}
+
 .comment-field textarea {
   outline: none;
   box-shadow: none;
@@ -292,7 +302,6 @@ h1 {
   border-radius: 6px;
   padding: 0.25rem;
   height: 20rem;
-  width: 40rem;
   resize: vertical;
   border-bottom-right-radius: 0;
 }

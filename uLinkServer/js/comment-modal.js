@@ -1,8 +1,10 @@
+// COMMENT MODAL ===========================================================================
+
 const openCommentModal = document.querySelectorAll("[data-comment-target]");
 const closeCommentModal = document.querySelectorAll("[data-comment-close]");
 const commentOverlay = document.getElementById("comment-overlay");
 
-// This section is used to disable the focus of the elements that are not part of the comment; this is especially important for screen readers
+// This section is used to disable the focus of the elements that are not part of the comment section; this is especially important for screen readers
 const commentInputs = document.querySelectorAll(".comment-input");
 const otherField = document.querySelectorAll("body *:not(.comment-input)");
 
@@ -22,7 +24,7 @@ function enableFocus(elements) {
 
 
 
-disableFocus(commentInputs); // disable it on the load of the page as the comment comment is not opened by default
+disableFocus(commentInputs); // disable it on the load of the page as the comment modal is not opened by default
 
 openCommentModal.forEach(button => {
     button.addEventListener("click", () => {
@@ -63,3 +65,53 @@ function closeComment(comment) {
     enableFocus(otherField);
     disableFocus(commentInputs);
 }
+
+
+
+// MODAL STAR RATING ===========================================================================
+
+const ratingStars = [...document.getElementsByClassName("rating-star")];
+const ratingAvg = [...document.getElementsByClassName("rating-avg")];
+
+
+function executeRating(stars) {
+   const starClassActive = "rating-star fas fa-star";
+   const starClassUnactive = "rating-star far fa-star";
+   const starsLength = stars.length;
+   let i;
+   let res;
+   stars.map((star) => {
+      star.onclick = () => {
+         i = stars.indexOf(star);
+
+         if (star.className.indexOf(starClassUnactive) !== -1) {
+            res = i + 1;
+            console.log(res);
+            for (i; i >= 0; --i) stars[i].className = starClassActive;
+         } 
+         else {
+            res = i;
+            console.log(res);
+            for (i; i < starsLength; ++i) stars[i].className = starClassUnactive;
+         }
+         document.querySelector(".result").innerHTML = `<input type="hidden" value="${res}" />`;
+      };
+   });
+}
+
+function avgRating(stars, average) {
+    const starClassActive = "rating-star fas fa-star";
+    let i;
+    i = average-1;
+    /* console.log(stars[i].className) */
+
+    for (i; i >= 0; --i) stars[i].className= starClassActive;
+
+}
+
+executeRating(ratingStars);
+
+var avg = document.getElementById("avg").value;
+/* console.log(avg); */
+
+avgRating(ratingAvg, avg);
