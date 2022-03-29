@@ -1,7 +1,7 @@
 <?php require_once "head.php" ?>
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
-    <link rel="stylesheet" href="./scss/pages/index.css" type="text/css" />
+    <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/index.css" type="text/css" onload="this.rel='stylesheet'" />
 </head>
 <body>
     <?php require_once "header-stu.php" ?>

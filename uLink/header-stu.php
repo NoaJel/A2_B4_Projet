@@ -1,7 +1,7 @@
 <header class="header">
-    <a href="/"><img src="./images/logo.png" alt="uLink logo" class="ulink-logo" /></a>
+    <a href="/"><img src="https://ulinkserver.com/images/logo.png" alt="uLink logo" class="ulink-logo" /></a>
     <nav class="parent-burger">
-        <button class="i-burger" data-burger-toggle type="button">
+        <button type="button" data-burger-toggle class="i-burger" alt="burger menu" aria-label="burger menu">
             <span></span> <!-- middle bar -->
         </button>
         <ul class="nav-links" data-nav-vertical>
@@ -11,7 +11,7 @@
         </ul>
     </nav>
     <div class="nav-icons">
-        <a href="#" class="notif-icon"><i class="fas fa-bell"></i></a>
+        <a href="#" class="notif-icon" alt="notif center" aria-label="notif center"><i class="fas fa-bell"></i></a>
         <button type="button" data-modal-target="#modal-container" class="login-btn" >
             Login <i class="fas fa-user-alt"></i>
         </button>
