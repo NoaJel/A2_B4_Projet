@@ -5,7 +5,7 @@
 RewriteEngine On
 
 # disable directory indexing
-Options All -Indexes
+#Options All -Indexes
 
 # defines the default index page
 DirectoryIndex index.php
