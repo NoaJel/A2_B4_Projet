@@ -97,6 +97,10 @@ h1 {
   padding: 0.5rem 1rem;
 }
 
+.checked {
+  color: orange;
+}
+
 .child-ranking button {
   border-radius: 1rem;
   background-color: var(--clr-primary-200);

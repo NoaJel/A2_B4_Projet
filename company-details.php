@@ -29,9 +29,9 @@
 
                     Users ranking
                     <div class="comment-btn">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <button data-comment-target="#comment-container" class="comment-btn">leave a comment →</button>
