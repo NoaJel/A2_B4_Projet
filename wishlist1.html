@@ -1,57 +1,96 @@
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <h1>Wishlist</h1>
 
 <section class="carousel">
     <ul class="carousel-items">
             <div class="card">
-                <h3 class="card-title">Internship infos</h3>
-                <img src="https://placeimg.com/572/322/animals" width="100" height="100" />
-                <div class="card-content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptatibus excepturi distinctio doloribus dolorem numquam odio aspernatur unde repellat eaque error, atque amet assumenda nobis neque optio tempore omnis! Tempora!</p>
+                <h3 class="card-title" >Internship infos <span class="fa fa-star"></span></h3>
+                <img src="https://placeimg.com/572/322/animals" width="120" height="120" />
+                <div class="card-content" style="align-items: auto;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
     </ul>
    
-    <ul>
+    <ul class="carousel-items">
             <div class="card">
-                <h3 class="card-title">Internship infos</h3>
-                <img src="https://placeimg.com/572/322/animals" width="100" height="100" />
-                <div class="card-content">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis culpa ad laboriosam suscipit natus magnam, vel saepe cupiditate, ab tempore laudantium eum nisi vitae aperiam, reprehenderit placeat dolores. Cupiditate.</p>
+                <h3 class="card-title">Internship infos <span class="fa fa-star"></span></h3>
+                <img src="https://placeimg.com/572/322/animals" width="120" height="120" />
+                <div class="card-content" >
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
     </ul>
+
+    <ul class="carousel-items">
+        <div class="card">
+            <h3 class="card-title">Internship infos <span class="fa fa-star"></span></h3>
+            <img src="https://placeimg.com/572/322/animals" width="120" height="120" />
+            <div class="card-content" >
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+</ul>
 </section>
 
-
-<section class="more details">
+<br> 
+<section class="details">
     <h3>More details</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet voluptatum ratione maiores facere sequi modi ab recusandae velit quae. Blanditiis quod eligendi perspiciatis deserunt provident molestias quis veritatis repellendus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, laboriosam? Nisi veritatis ducimus autem ipsam iure, molestiae commodi ea temporibus vel, sunt minus perferendis accusamus ipsa quae animi voluptas et.</p>
 
 </section>
 
 <style>
+
+.details {
+            display:block;
+            float:right;
+            width:45%;
+            height: 62%;
+            margin-right:20px;
+            padding: 10px;
+            border-color: black;
+            border-style: solid;
+        }
    
+   .carousel {
+            display:block;
+            float:left;
+            width:45%;
+            margin-right:20px;
+            padding: 1px;
+            overflow-y: scroll;
+        }
+
+    .card-title{float:right; position:relative; padding:2px;}
+    .card-content{float:right;position:relative; padding:2px;}
+
 
    .bottom{
         display: block;
         margin: left;
         border-radius: 10px;
-        width: 50;
-        float:left;
+        width: 10;
     }
 
 
- .carousel-items{ 
-     border: 1px solid rgb(54, 54, 54); 
-     padding: 5px; 
+    .carousel-items{ 
+     border: 2px solid rgb(54, 54, 54); 
+     padding: 2px; 
      border-radius: 10px; 
-     float:left;
      margin: left;
+     float: left;
      display: block;
+     position:relative;
     }
 
 .vertical .carousel-inner {
     height: 50%;
-    float:left;
 }
  
 .carousel.vertical .item {
@@ -64,33 +103,27 @@
  
 .carousel.vertical .active {
     top: 0;
-    float:left;
 }
  
 .carousel.vertical .next {
     top: 400px;
-    float:left;
 }
  
 .carousel.vertical .prev {
     top: -400px;
-    float:left;
 }
  
 .carousel.vertical .next.left,
 .carousel.vertical .prev.right {
     top: 0;
-    float: left;
 }
  
 .carousel.vertical .active.left {
     top: -400px;
-    float:left;
 }
  
 .carousel.vertical .active.right {
     top: 400px;
-    float: left;
 }
  
 .carousel.vertical .item {
@@ -101,11 +134,9 @@
     width: 50%;
     bottom: inherit;
     top: inherit;
-    float:left;
 }
  
 .carousel.vertical .carousel-control.left {
     top: 0;
-    float:left;
 }
 </style>
