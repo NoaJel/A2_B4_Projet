@@ -107,6 +107,11 @@ h1 {
   border: 2px solid var(--clr-accent-200);
 }
 
+.child-ranking button:hover,
+.child-ranking button:focus {
+  border-color: var(--clr-primary-200);
+}
+
 .sous-parent-2 {
   display: flex;
   flex-wrap: wrap;
