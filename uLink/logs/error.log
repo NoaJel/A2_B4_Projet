@@ -1,0 +1,25 @@
+[Tue Mar 29 10:01:23.345595 2022] [ssl:warn] [pid 744:tid 596] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:23.375516 2022] [ssl:warn] [pid 744:tid 596] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:23.590962 2022] [ssl:warn] [pid 13908:tid 600] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:23.619884 2022] [ssl:warn] [pid 13908:tid 600] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:51.427119 2022] [ssl:warn] [pid 20712:tid 596] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:51.457881 2022] [ssl:warn] [pid 20712:tid 596] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:51.684275 2022] [ssl:warn] [pid 6892:tid 600] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:01:51.714195 2022] [ssl:warn] [pid 6892:tid 600] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:03:54.555801 2022] [ssl:warn] [pid 9880:tid 604] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:03:54.586718 2022] [ssl:warn] [pid 9880:tid 604] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:03:54.927580 2022] [ssl:warn] [pid 22456:tid 600] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 10:03:54.957500 2022] [ssl:warn] [pid 22456:tid 600] AH01909: ulink.com:443:0 server certificate does NOT include an ID which matches the server name
+[Tue Mar 29 11:02:59.264231 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:00.019642 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:00.501496 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:00.804908 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:00.965895 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:01.139967 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:01.309402 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:03:01.468987 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:60343] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat, referer: https://ulink.com/connexion-page.php
+[Tue Mar 29 11:07:09.375562 2022] [php7:error] [pid 11372:tid 1792] [client 127.0.0.1:49362] script 'C:/www/A2_B4_Projet/uLink/entity-management.php' not found or unable to stat
+[Tue Mar 29 11:24:33.607614 2022] [php7:warn] [pid 11372:tid 1816] [client 127.0.0.1:52917] PHP Warning:  require(./uLink/php/entity-search.php): failed to open stream: No such file or directory in C:\\www\\A2_B4_Projet\\uLink\\entity-management.php on line 3
+[Tue Mar 29 11:24:33.607614 2022] [php7:error] [pid 11372:tid 1816] [client 127.0.0.1:52917] PHP Fatal error:  require(): Failed opening required './uLink/php/entity-search.php' (include_path='C:\\xampp\\php\\PEAR') in C:\\www\\A2_B4_Projet\\uLink\\entity-management.php on line 3
+[Tue Mar 29 11:24:35.069450 2022] [php7:warn] [pid 11372:tid 1792] [client 127.0.0.1:52918] PHP Warning:  require(./uLink/php/entity-search.php): failed to open stream: No such file or directory in C:\\www\\A2_B4_Projet\\uLink\\entity-management.php on line 3
+[Tue Mar 29 11:24:35.069450 2022] [php7:error] [pid 11372:tid 1792] [client 127.0.0.1:52918] PHP Fatal error:  require(): Failed opening required './uLink/php/entity-search.php' (include_path='C:\\xampp\\php\\PEAR') in C:\\www\\A2_B4_Projet\\uLink\\entity-management.php on line 3
