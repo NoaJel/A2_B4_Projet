@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-200: #faf6d1;
+  --clr-primary-500: #824936;
+  --clr-primary-700: #4b4737;
+  --clr-accent-200: #f1d900;
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #222c2a;
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-accent: "intro-bold", sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-accent);
+}
+
+main {
+  padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+::placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+.details {
+  display: block;
+  float: right;
+  width: 45%;
+  height: 62%;
+  margin-right: 20px;
+  padding: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+.carousel {
+  display: block;
+  float: left;
+  width: 45%;
+  margin-right: 20px;
+  padding: 1px;
+  overflow-y: scroll;
+}
+
+.card-title {
+  float: right;
+  position: relative;
+  padding: 2px;
+}
+
+.card-content {
+  float: right;
+  position: relative;
+  padding: 2px;
+}
+
+.bottom {
+  display: block;
+  margin: left;
+  border-radius: 10px;
+  width: 10;
+}
+
+.carousel-items {
+  border: 2px solid #363636;
+  padding: 2px;
+  border-radius: 10px;
+  margin: left;
+  float: left;
+  display: block;
+  position: relative;
+}
+
+.vertical .carousel-inner {
+  height: 50%;
+}
+
+.carousel.vertical .item {
+  transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 400px;
+}
+
+.carousel.vertical .prev {
+  top: -400px;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -400px;
+}
+
+.carousel.vertical .active.right {
+  top: 400px;
+}
+
+.carousel.vertical .item {
+  left: 0;
+}
+
+.carousel.vertical .carousel-control {
+  width: 50%;
+  bottom: inherit;
+  top: inherit;
+}
+
+.carousel.vertical .carousel-control.left {
+  top: 0;
+}/*# sourceMappingURL=wishlist.css.map */

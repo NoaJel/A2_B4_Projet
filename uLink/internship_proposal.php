@@ -1,8 +1,8 @@
     <?php require "head.php" ?>
     <meta charset="description" content="Create an internship proposal here!" />
     <title>Create an internship proposal</title>
-    <link rel="stylesheet" href="./scss/pages/internship-proposal.css" />
-    <script src="./js/header-stu.js" defer></script>
+    <link rel="stylesheet" href="https://ulinkserver.com/scss/pages/internship-proposal.css" />
+    <script src="https://ulinkserver.com/js/header-stu.js" defer></script>
 </head>
 <body>
         <?php require "header-stu.php"?>
