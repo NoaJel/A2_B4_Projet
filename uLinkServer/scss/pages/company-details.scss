@@ -59,6 +59,12 @@ h1 {
   border-color: var(--clr-primary-200);
 }
 
+.rating-number {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.6rem;
+}
+
 .sous-parent-2 {
     display: flex;
     flex-wrap: wrap;

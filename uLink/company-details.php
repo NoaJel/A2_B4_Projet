@@ -35,10 +35,11 @@
                             <i class="rating-avg far fa-star"></i>
                             <i class="rating-avg far fa-star"></i>
                             <i class="rating-avg far fa-star"></i>
-                            <input id="avg" type="hidden" value=4 />
+                            <input id="avg" type="hidden" value=3.5 />
                         </div>
                         <button data-comment-target="#comment-container" class="comment-btn">Rate this company →</button>
                     </div>
+                    <div class="rating-number"></div>
                 </div>
             </div>
             <div class="sous-parent-2">

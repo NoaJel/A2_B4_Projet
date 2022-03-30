@@ -102,10 +102,12 @@ function executeRating(stars) {
 function avgRating(stars, average) {
     const starClassActive = "rating-star fas fa-star";
     let i;
-    i = average-1;
+    i = average;
+    document.querySelector(".rating-number").innerHTML =`${i}/5`;
+    i = Math.round(average-1);
     /* console.log(stars[i].className) */
-
     for (i; i >= 0; --i) stars[i].className= starClassActive;
+
 
 }
 
