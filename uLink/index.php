@@ -1,3 +1,11 @@
+<?php
+if(!isset($_COOKIE["type"]))
+{
+ header("location:connexion-page.php");
+}
+?>
+
+
 <?php require_once "head.php" ?>
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
