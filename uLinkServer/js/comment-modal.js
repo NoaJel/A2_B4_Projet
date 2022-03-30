@@ -86,12 +86,12 @@ function executeRating(stars) {
 
          if (star.className.indexOf(starClassUnactive) !== -1) {
             res = i + 1;
-            console.log(res);
+            /* console.log(res); */
             for (i; i >= 0; --i) stars[i].className = starClassActive;
          } 
          else {
             res = i;
-            console.log(res);
+            /* console.log(res); */
             for (i; i < starsLength; ++i) stars[i].className = starClassUnactive;
          }
          document.querySelector(".result").innerHTML = `<input type="hidden" value="${res}" />`;
