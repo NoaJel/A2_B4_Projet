@@ -94,30 +94,44 @@ main {
   font-size: 1rem;
 }
 
+::-moz-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+::placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
 body {
   padding-left: calc(100vw - 100%);
   box-sizing: content-box;
 }
 
-:not(body) {
-  box-sizing: border-box;
-}
-
 form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1.75rem;
 }
 
-h2 {
-  margin-bottom: 2.5rem;
-  font-size: 2rem;
+.role {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.main-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.role label {
+  margin-right: 2rem;
 }
 
 .form-field {
@@ -125,50 +139,27 @@ h2 {
   flex-direction: column;
 }
 
-.form-field input,
-.form-field textarea,
-.form-field select {
+.form-field input {
   outline: none;
   box-shadow: none;
   border: 1px solid black;
-  margin: 1rem 10rem 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
   padding: 1rem;
   border-radius: 20px;
   font-size: 1.05rem;
 }
 
-.form-field textarea {
-  resize: vertical;
-  min-height: 3.625rem;
-  border-bottom-right-radius: 0;
-}
-
 .form-submit {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 1.5rem;
-  margin-right: 10rem;
-}
-
-#submit-btn {
-  padding: 1rem 0;
-  border-color: black;
-  border-left-width: 1px;
-  border-top-width: 1px;
-  border-radius: 20px;
-  background-color: var(--clr-accent-200);
-  width: 15rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-#submit-btn:hover,
-#submit-btn:focus {
-  border: solid 2px var(--clr-primary-200);
 }
 
 .form-submit input {
-  margin: 1rem 10rem 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
   padding: 1rem;
   border-radius: 20px;
   font-size: 1.05rem;
@@ -176,17 +167,19 @@ h2 {
 }
 
 .form-field input,
-.form-field textarea,
 .form-submit input {
   font-family: var(--ff-primary);
 }
 
 .form-field input:focus,
-.form-field textarea:focus,
 .form-submit input:focus {
   border: solid 2px var(--clr-accent-200);
 }
 
 .form-field label {
   font-size: 1.1rem;
-}/*# sourceMappingURL=company-management.css.map */
+}
+
+#perm {
+  display: none;
+}/*# sourceMappingURL=user-management.css.map */
