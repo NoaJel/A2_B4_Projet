@@ -1,10 +1,26 @@
+
+
+
+<?php require_once "head.php"; ?>
+    <meta name="description" content="Manage your roles/users/companies here." />
+    <title>uLink - Entity Management</title>
+    <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/entity-management.css" type="text/css" onload="this.rel='stylesheet'" />
+    <script type="text/javascript" src="https://ulinkserver.com/js/entity-management.js" defer></script>
+    <?php require_once "header-stu.php"; ?>
     <?php //require "./php/entity-search.php"; ?>
-    <?php require "./php/delete-entity.php"; ?>
-    <?php require "./php/permissions.php"; ?>
+    <?php require_once "./php/delete-entity.php"; ?>
+    <?php require_once "./php/permissions.php";?>
+
+
+
+
+    
+    
+
+
 
 
     <?php
-$increment = 1;
 require_once "./php/database_connection.php";
 if(isset($_POST["search"]))
 {
@@ -58,12 +74,7 @@ if(isset($_POST["search"]))
 ?>
 
 
-<?php require_once "head.php"; ?>
-    <meta name="description" content="Manage your roles/users/companies here." />
-    <title>uLink - Entity Management</title>
-    <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/entity-management.css" type="text/css" onload="this.rel='stylesheet'" />
-    <script type="text/javascript" src="https://ulinkserver.com/js/entity-management.js" defer></script>
-    <?php require_once "header-stu.php"; ?>
+
 </head>
 <body>
     <main>
@@ -73,10 +84,16 @@ if(isset($_POST["search"]))
                 <div class="flex-row-container search-section">
                     <input name="search" type="search" class="searchbar"/>
                 </div>
-                <?php if ($sFx2 == true)
+                <?php if ($sFx2)
                         { 
                         echo
                         '<a href="./company-management.php" class="add-entity"><i class="fas fa-plus-circle"></i>&nbsp;Add company</a>';
+                        }?>
+
+                <?php if ($sFx2)
+                        { 
+                        echo
+                        '<a href="./user-management.php" class="add-entity"><i class="fas fa-plus-circle"></i>&nbsp;Add user</a>';
                         }?>
             </div>
             <div class="flex-row-container main">
@@ -128,12 +145,12 @@ if(isset($_POST["search"]))
                             <div class="flex-row-container card-header">
                             <h2 class="card-title">',$row["name"],'</h2>
                             <div class="icons">';
-                            if ($sFx4 == true)
+                            if ($sFx4 == 1)
                             {
                             echo '
                             <a href="./company-management.php?action=update&company_name='.$row["name"].'"><i class="fas fa-pen"></i></a>';
                             }
-                            if ($sFx6 == true)
+                            if ($sFx6 == 1)
                             {
                             echo '
                             <a href="./entity-management.php?action=delete&company_name='.$row["name"].'"><i class="fas fa-trash"></i></a>';
@@ -154,9 +171,18 @@ if(isset($_POST["search"]))
                     echo '<div class="flex-column-container entity-card">
                             <div class="flex-row-container card-header">
                             <h2 class="card-title">',$row["first_name"],"&nbsp",$row["name"],'</h2>
-                            <div class="icons">
-                            <i class="fas fa-pen"></i>
-                            <i class="fas fa-trash"></i>
+                            <div class="icons">';
+                            if ($sFx4 == 1)
+                            {
+                            echo '
+                            <a href="./user-management.php?action=update&user_id='.$row["id_user"].'"><i class="fas fa-pen"></i></a>';
+                            }
+                            if ($sFx16 == 1)
+                            {
+                            echo '
+                            <a href="./entity-management.php?action=delete&user_id='.$row["id_user"].'"><i class="fas fa-trash"></i></a>';
+                            }
+                            echo '
                             </div>
                             </div>
                             <img src="https://ulinkserver.com/images/logo.png" alt="put image desc here">
@@ -173,15 +199,23 @@ if(isset($_POST["search"]))
                     echo '<div class="flex-column-container entity-card">
                             <div class="flex-row-container card-header">
                             <h2 class="card-title">',$row["first_name"],"&nbsp",$row["name"],'</h2>
-                            <div class="icons">
-                            <i class="fas fa-pen"></i>
-                            <i class="fas fa-trash"></i>
+                            <div class="icons">';
+                            if ($sFx4 == 1)
+                            {
+                            echo '
+                            <a href="./user-management.php?action=update&user_id='.$row["id_user"].'"><i class="fas fa-pen"></i></a>';
+                            }
+                            if ($sFx20 == 1)
+                            {
+                            echo '
+                            <a href="./entity-management.php?action=delete&user_id='.$row["id_user"].'"><i class="fas fa-trash"></i></a>';
+                            }
+                            echo '
                             </div>
                             </div>
                             <img src="https://ulinkserver.com/images/logo.png" alt="put image desc here">
                             <p>',$row["login"],'</p>
-                            </div>';
-
+                            </div>'; 
                 }
             }
             elseif(isset($_POST["student"]))
@@ -192,15 +226,23 @@ if(isset($_POST["search"]))
                     echo '<div class="flex-column-container entity-card">
                             <div class="flex-row-container card-header">
                             <h2 class="card-title">',$row["first_name"],"&nbsp",$row["name"],'</h2>
-                            <div class="icons">
-                            <i class="fas fa-pen"></i>
-                            <i class="fas fa-trash"></i>
+                            <div class="icons">';
+                            if ($sFx4 == 1)
+                            {
+                            echo '
+                            <a href="./user-management.php?action=update&user_id='.$row["id_user"].'"><i class="fas fa-pen"></i></a>';
+                            }
+                            if ($sFx25 == 1)
+                            {
+                            echo '
+                            <a href="./entity-management.php?action=delete&user_id='.$row["id_user"].'"><i class="fas fa-trash"></i></a>';
+                            }
+                            echo '
                             </div>
                             </div>
                             <img src="https://ulinkserver.com/images/logo.png" alt="put image desc here">
                             <p>',$row["login"],'</p>
-                            </div>';
-
+                            </div>'; 
                 }
             }
             else

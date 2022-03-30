@@ -11,30 +11,34 @@ $message = '';
 
 if(isset($_POST["login"]))
 {
- if(empty($_POST["login_email"]) || empty($_POST["login_password"]))
- {
-  $message = "<div class='alert alert-danger'>Both Fields are required</div>";
- }
- else
- {
-  $query = "SELECT id_user FROM user NATURAL JOIN possess NATURAL JOIN permissions WHERE login=:user_login AND password=:user_password AND permissions='sFx1'";
-  $statement = $connect->prepare($query);
-  $statement->execute(array('user_login' => $_POST["login_email"], 'user_password' => $_POST["login_password"]));
-
-  $count = $statement->rowCount();
-  if($count == 1)
+    if(empty($_POST["login_email"]) || empty($_POST["login_password"]))
     {
-        $result = $statement->fetch();
-
-        setcookie("type", $result["id_user"], time()+3600);
-        header("location:entity-management.php");
+        $message = "<div class='alert alert-danger'>Both Fields are required</div>";
     }
-  
-  else
-  {
-    $message = "<div class='alert alert-danger'>Wrong Email Address or password</div>";
-  }
- }
+    else
+    {
+        $query = "SELECT id_user, password FROM user NATURAL JOIN be NATURAL JOIN roles NATURAL JOIN can NATURAL JOIN permissions WHERE login=:user_login AND permissions='sFx1'";
+        $statement = $connect->prepare($query);
+        $statement->execute(array('user_login' => $_POST["login_email"]));
+        $count = $statement->rowCount();
+        $result = $statement->fetch();
+        if($count == 0)
+        {
+            $message = "<div class='alert alert-danger'>Wrong Email Address</div>";
+        }
+        else
+        {
+            if(password_verify($_POST["login_password"], $result["password"]))
+            {
+                setcookie("type", $result["id_user"], time()+3600);
+                header("location:entity-management.php");
+            }
+            else
+            {
+                $message = "<div class='alert alert-danger'>Wrong password</div>";
+            }
+        }
+    }
 }
 
 
@@ -54,6 +58,7 @@ if(isset($_POST["login"]))
        
     <form method="POST">
         <legend><h3>Login to your account!</h3></legend>
+        <?php echo $message; ?>
         <div class="login-field">
             <label for="login-email"></label>
             <input type="email" name="login_email" class="login-input" id="login-email" placeholder="Email" />
