@@ -16,8 +16,8 @@
 
     elseif (isset($_POST["valid_update"])){
         $request = $connect->prepare("UPDATE company, address SET name = :name, business_sector = :business, nb_interns_accepted = :interns, country = :country, postal_code = :postal_code, city = :city, street = :street, street_number = :street_number, address_complement = :address_complement WHERE company.company_id=address.company_id AND company.company_id = :company_id;");
-        $request->execute( array('name'=>$_POST['company_name'], 'business'=>$_POST['business'], 'interns'=>$_POST['interns'], 'country'=>$_POST['country'], 'postal_code'=>$_POST['postal'], 'city'=>$_POST['city'], 'street'=>$_POST['address'], 'street_number'=>$_POST['number'], 'address_complement'=>$_POST['complement'], 'company_id'=> $_COOKIE['company']));
-        setcookie("company", "", time()-3600);   
+        $request->execute( array('name'=>$_POST['name'], 'business'=>$_POST['business'], 'interns'=>$_POST['interns'], 'country'=>$_POST['country'], 'postal_code'=>$_POST['postal'], 'city'=>$_POST['city'], 'street'=>$_POST['address'], 'street_number'=>$_POST['number'], 'address_complement'=>$_POST['complement'], 'company_id'=> $_COOKIE['company']));
+        setcookie("company", "", time()-3600);  
         header("location:./entity-management.php");
     }
 

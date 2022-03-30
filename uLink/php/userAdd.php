@@ -107,7 +107,7 @@ include("database_connection.php");
             setcookie("id_user", "", time()-3600);  
         }
         $request = $connect->prepare("SELECT * FROM can NATURAL JOIN roles NATURAL JOIN be NATURAL JOIN user WHERE id_user=:id_user");
-        $request->execute(array('id_user'=>$_GET["user_id"]));
+        $request->execute(array('id_user'=> $_GET["user_id"]));
         $line = $request->fetch();
         $rows = $request->fetchAll();
 
@@ -181,5 +181,5 @@ include("database_connection.php");
 
 
         }
-        setcookie("id_user", $row['id_user'], time()+3600);
+        setcookie("id_user", $_GET["user_id"], time()+3600);
     }
