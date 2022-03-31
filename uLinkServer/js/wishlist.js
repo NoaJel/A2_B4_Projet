@@ -13,7 +13,7 @@ let placeholder = document.getElementById("placeholder");
 
 /* internship_info.innerHTML = ""; */
 
-/* details_window.innerHTML = ""; */
+details_window.innerHTML = "";
 details_window.appendChild(placeholder);
 console.log(list);
 showList();
