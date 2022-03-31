@@ -105,9 +105,31 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.searchbar > * {
+.search-element {
   border-radius: 6px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem;
+}
+
+.searchbar button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  border-color: black;
+  border-style: solid;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  background-color: var(--clr-accent-200);
+  padding: 0.3rem 0.5rem;
+}
+
+.searchbar button:focus,
+.searchbar button:hover {
+  border: solid 2px var(--clr-primary-200);
 }
 
 .internship-card {
