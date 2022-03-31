@@ -58,98 +58,21 @@ main {
   font-size: 1rem;
 }
 
-.details {
-  display: block;
-  float: right;
-  width: 45%;
-  height: 62%;
-  margin-right: 20px;
-  padding: 10px;
-  border-color: black;
-  border-style: solid;
+h1 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
-.carousel {
-  display: block;
-  float: left;
-  width: 45%;
-  margin-right: 20px;
-  padding: 1px;
-  overflow-y: scroll;
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.card-title {
-  float: right;
-  position: relative;
-  padding: 2px;
-}
-
-.card-content {
-  float: right;
-  position: relative;
-  padding: 2px;
-}
-
-.bottom {
-  display: block;
-  margin: left;
-  border-radius: 10px;
-  width: 10;
-}
-
-.carousel-items {
-  border: 2px solid #363636;
-  padding: 2px;
-  border-radius: 10px;
-  margin: left;
-  float: left;
-  display: block;
-  position: relative;
-}
-
-.vertical .carousel-inner {
-  height: 50%;
-}
-
-.carousel.vertical .item {
-  transition: 0.6s ease-in-out top;
-}
-
-.carousel.vertical .active {
-  top: 0;
-}
-
-.carousel.vertical .next {
-  top: 400px;
-}
-
-.carousel.vertical .prev {
-  top: -400px;
-}
-
-.carousel.vertical .next.left,
-.carousel.vertical .prev.right {
-  top: 0;
-}
-
-.carousel.vertical .active.left {
-  top: -400px;
-}
-
-.carousel.vertical .active.right {
-  top: 400px;
-}
-
-.carousel.vertical .item {
-  left: 0;
-}
-
-.carousel.vertical .carousel-control {
-  width: 50%;
-  bottom: inherit;
-  top: inherit;
-}
-
-.carousel.vertical .carousel-control.left {
-  top: 0;
+.wish {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: var(--clr-primary-200);
+  border: 2px solid var(--clr-accent-200);
 }/*# sourceMappingURL=wishlist.css.map */
