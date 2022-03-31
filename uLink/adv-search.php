@@ -29,6 +29,9 @@
                             <td>
                                 <div class="internship-card">
                                     <h3><?=$card["name"]?> - <?=$card["skills"]?> internship</h3>
+                                    <?php if ($sFx27): ?>
+                                        <a href="./adv-search.php?id=<?=$card["internship_id"]?>&internship_search"><i class="fa-solid fa-star"></i></a>
+                                    <?php endif; ?>
                                     <img src="https://picsum.photos/200?random=<?=random_int(1, 100)?>" alt="desc of the photo here" />
                                     <ul>
                                         <li>Domain: <?=$card["business_sector"]?> &rArr; <?=$card["skills"]?></li>
