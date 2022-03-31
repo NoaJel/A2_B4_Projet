@@ -8,50 +8,41 @@
     <?php require_once "header-stu.php" ?>
     <main>
         <h1>Wishlist</h1>
-        <div class="wishlist">
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
+        <div class="page">
+            <div class="pagination">
+                <div id="wishlist">
+                    <div class="wish" onclick="details()">
+                        <div class="wish-info">
+                            <h2>Internship : Web dev</h2>
+                            <h3>Company : Ulink</h3>
+                            <h3>Location : Strasbourg</h3>
+                            <h3>Profile : Fullstack dev, A4</h3>
+                        </div>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                </div>
+                <div class="btn-change">
+                    <button class="change" onclick="firstPage()">|<</button>
+                    <button class="change" onclick="previous()"><</button>
+                    <span id="pageInfo"></span>
+                    <button class="change" onclick="nextPage()">></button>
+                    <button class="change" onclick="lastPage()">>|</button>
+                </div>
             </div>
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
+            <div id="details-window">
+                <p id="placeholder">Select an internship in the wishlist.</p>
+                <div id="internship-info">
+                    <h2>Internship : Web dev</h2>
+                    <h3>Company : Ulink</h3>
+                    <h3>Location : Strasbourg</h3>
+                    <h3>Profile : Fullstack dev, A4</h3>
+                    <h4 id="more">More informations:</h4>
+                    <section id="more-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, nobis. Nemo repellat quas dolores enim ratione nihil eos incidunt quae eligendi veniam, provident similique dolorum asperiores! Repellendus ea repellat architecto quasi unde at? Nesciunt excepturi sequi eaque est, consequatur, delectus sit assumenda corporis sapiente laboriosam culpa eligendi dolore aperiam dolor!</section>
+                    <button>Apply !</button>
+                    <section id="number-of-places">number of places : 3</section>
+                </div>
             </div>
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
-            </div>
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
-            </div>
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
-            </div>
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
-            </div>
-            <div class="wish" onclick="details()">
-                <h3>Ulink</h3>
-                <i class="fas fa-star"></i>
-                <section>Web dev</section>
-                <section>Fullstack dev, A4</section>
-            </div>
-
         </div>
     </main>
     <?php require_once "footer.php" ?>
