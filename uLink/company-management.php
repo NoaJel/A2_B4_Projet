@@ -53,20 +53,8 @@ include("./php/companyAdd.php")
                     <option>-- Enter your postal code first (autocompletion) --</option>
                 </select>
             </div>
-            <div class="form-field">
-                <label for="phone-number">Phone Number</label>
-                <input name="phone" type="text" id="phone-number" placeholder="Do not use dots or spaces to separate numbers" pattern="[0-9]{10}" maxlength="10" required />
-            </div>
-            <div class="form-field">
-                <label for="tags">Add tags</label>
-                <input type="text" id="tags" placeholder="Add some tags to precise your profile (e.g. #webdev, #java, etc.)" required />
-            </div>
-            <div class="form-field">
-                <label for="description">Description</label>
-                <textarea id="description" placeholder="Put more details here about your company"></textarea>
-            </div>
             <div class="form-submit">
-                <button type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" id="submit-btn">Validate &rarr;</button>
+                <button name="insert" type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" id="submit-btn">Validate &rarr;</button>
             </div>
         </form>
     </main> 
