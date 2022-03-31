@@ -1,0 +1,43 @@
+@use "../base/" as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+    h1,
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .searchbar > * {
+        border-radius: 6px;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .internship-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+
+        .internship-card h3 {
+            margin: 0.5rem;
+        }
+
+        .internship-card img {
+            margin: 0.5rem 5rem;
+            border-radius: 6px;
+            border: solid thin var(--clr-accent-200);
+        }
+
+        .internship-card ul {
+            width: 0;
+            min-width: 100%;
+            padding: 0.5rem;
+            list-style: none;
+        }
