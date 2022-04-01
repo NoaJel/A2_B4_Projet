@@ -1,9 +1,9 @@
 <?php
 
-$servname = 'localhost';
+$servname = '127.0.0.10';
 $dbname = 'a2_web_projet3';
-$user = 'admin';
-$pass = '123456';
+$user = 'root';
+$pass = '';
 
 try {
     $connect = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
