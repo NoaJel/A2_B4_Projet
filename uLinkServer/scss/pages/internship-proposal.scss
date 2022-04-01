@@ -1,0 +1,82 @@
+@use "../base/" as *;
+
+body { // allows the page not to shift left when scrollbar appears
+    padding-left: calc(100vw - 100%);
+    box-sizing: content-box;
+}
+
+::placeholder {
+    opacity: 1;
+    color: grey;
+    font-size: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form-field label {
+    font-size: 1.1rem;
+}
+
+.form-field input,
+.form-field textarea {
+    @include input-reset;
+
+    margin: 1rem 0;
+    padding: 1rem;
+    
+    border-radius: 20px;
+
+    font-size: 1.05rem;
+}
+
+.form-field textarea { // allows the textarea only to be moved vertically + handle made visible
+    resize: vertical;
+    border-bottom-right-radius: 0;
+}
+
+    .form-field textarea,
+    .form-field textarea::placeholder {
+        font-family: var(--ff-primary);
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder {
+        text-align: center;
+    }
+
+    .form-field input:focus,
+    .form-field textarea:focus {
+        border: solid 2px var(--clr-accent-200);
+    }
+
+
+
+#submit-btn {
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    border-color: black;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-radius: 20px;
+
+    background-color: var(--clr-accent-200);
+}
+    #submit-btn:hover,
+    #submit-btn:focus {
+        border: solid 2px var(--clr-primary-200);
+    }

@@ -1,0 +1,16 @@
+@use "../base/" as *;
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    width: inherit;
+    max-width: inherit;
+    
+    background-color: var(--clr-primary-300);
+    text-align: center;
+}
+
+footer a {
+    @include link-reset;
+}

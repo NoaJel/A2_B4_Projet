@@ -1,0 +1,12 @@
+@mixin btn {
+    border-color: black;
+    border-style: solid;
+    border-left-width: 1px;
+    border-top-width: 1px;
+
+    background-color: var(--clr-accent-200);
+}
+
+@mixin btn-focus-hover {
+    border: solid 2px var(--clr-primary-200);
+}
