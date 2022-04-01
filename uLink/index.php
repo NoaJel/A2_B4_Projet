@@ -20,10 +20,11 @@ if(!isset($_COOKIE["type"]))
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam adipisci laudantium, in numquam dicta consequuntur dolores mollitia voluptas. Ducimus, voluptatum voluptas! Provident quia pariatur cumque. Nemo, doloribus veniam amet, numquam similique officia repudiandae nostrum saepe, qui iusto autem? Iusto laborum aliquam omnis quibusdam aliquid magnam incidunt aspernatur molestiae enim! Recusandae amet beatae libero ipsa assumenda minima earum atque neque cumque error. Itaque culpa rerum voluptatem odit neque impedit nesciunt dolorum qui voluptate placeat, eligendi sed autem ad eveniet non commodi, rem laudantium amet maxime odio, ipsam molestiae nostrum velit. Possimus dolores rerum soluta aliquid vero, dicta nam dignissimos deserunt explicabo!
                 </p>
+                <a id="start" href="adv-search.php">GET STARTED →</a>
             </div>
             <div id="img">
                 <img src="https://ulinkserver.com/images/internship.jpg" alt="photo" id="image">
-                <section id="quote">"QUOTE"</section>
+                <section id="quote">"Go faster with uLink!"</section>
             </div>
         </div>
     </main>

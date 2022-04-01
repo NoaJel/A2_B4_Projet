@@ -3,17 +3,49 @@
 #home {
     display: flex;
     gap: 5rem;
+    padding: 3rem;
 }
 
 #text {
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
+    align-items: flex-start;
 }
 
 #img {
     display: flex;
     flex-direction: column;
-    width: 450rem;
-    max-width: 80%;
+    max-width: 55%;
+    gap: 1.3rem;
 }
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-style: italic;
+    color: rgb(144, 144, 144);
+}
+
+#start {
+    display: flex;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 0.8rem 2rem;
+    color: black;
+}
+
+
+@media (max-width: 476px) {
+
+    #home {
+        flex-direction: column;
+    }
+
+}
+
+
 
