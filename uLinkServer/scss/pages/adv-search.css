@@ -94,59 +94,36 @@ main {
   font-size: 1rem;
 }
 
-h1 {
-  margin-bottom: 2.5rem;
-}
-
-.flex-row-container {
-  display: flex;
-  align-items: center;
-}
-.flex-row-container.main {
-  gap: 1.5rem 3rem;
-}
-.flex-row-container.top-section {
-  gap: 2.5rem;
-  font-size: 1.1rem;
-}
-.flex-row-container.search-section {
-  gap: 1rem;
-}
-.flex-row-container.sort-entity {
-  gap: 1.5rem;
-}
-.flex-row-container.cards-section {
-  gap: 2.5rem 5rem;
-  flex-wrap: wrap;
-}
-.flex-row-container.card-header {
-  justify-content: space-between;
-}
-
-.flex-column-container {
+.main {
   display: flex;
   flex-direction: column;
-}
-.flex-column-container.entity-card {
-  gap: 0.5rem;
+  gap: 5rem;
 }
 
-.top-section input {
+h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.search-element {
+  border-radius: 6px;
   padding: 0.5rem;
-  font-size: 1.05rem;
+}
+.search-element:not(#searchbar > *) {
+  width: 100%;
 }
 
-.add-entity {
-  color: inherit;
-  text-decoration: none;
+.search-element:not(#searchbar > *):focus {
+  border: 2px solid var(--clr-accent-200);
+  background-color: rgba(0, 0, 0, 0.025);
 }
 
-.sort-entity {
-  min-width: 33.3333333333%;
-  width: 50rem;
+#internship-search {
+  width: 60%;
+  margin-bottom: 2rem;
 }
 
-.sort-btn {
+#searchbar button {
   font: inherit;
   color: inherit;
   background-color: transparent;
@@ -160,36 +137,54 @@ h1 {
   border-left-width: 1px;
   border-top-width: 1px;
   background-color: var(--clr-accent-200);
+  padding: 0.3rem 0.5rem;
 }
 
-.sort-btn:focus,
-.sort-btn:hover {
+#searchbar button:focus,
+#searchbar button:hover {
   border: solid 2px var(--clr-primary-200);
 }
 
-.entity-card {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: 1px solid black;
-  padding: 1rem;
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: min(90%, 40rem);
+}
+
+.filter-container label {
+  padding: 0.5rem 0.5rem 0.5 0;
+  cursor: pointer;
+}
+
+.internship-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid black;
   border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.025);
 }
 
-.entity-card img {
-  width: 18rem;
-  padding: 0 4rem;
+.internship-card h3 {
+  margin: 0.5rem;
 }
 
-.entity-card p {
+.internship-card img {
+  margin: 0.5rem 5rem;
+  border-radius: 6px;
+  border: solid thin var(--clr-accent-200);
+}
+
+.internship-card ul {
   width: 0;
   min-width: 100%;
-}
-
-.card-header {
-  padding-inline: 0.25rem;
-}
-
-.select-entity button:hover label {
-  pointer-events: none;
-}/*# sourceMappingURL=entity-management.css.map */
+  padding: 0.5rem;
+  list-style: none;
+}/*# sourceMappingURL=adv-search.css.map */

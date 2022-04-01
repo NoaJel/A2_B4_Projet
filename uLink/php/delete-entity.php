@@ -12,8 +12,10 @@ if (!empty($_GET['action']) and $_GET["action"] == "delete")
     
         $request2 = $connect->prepare("DELETE FROM address WHERE company_id = :company_id");
         $request2->execute(array('company_id'=>$row['company_id']));
-        $request3 = $connect->prepare("DELETE FROM company WHERE company_id = :company_id");
+        $request3 = $connect->prepare("DELETE FROM internship WHERE company_id = :company_id");
         $request3->execute(array('company_id'=>$row['company_id']));
+        $request4 = $connect->prepare("DELETE FROM company WHERE company_id = :company_id");
+        $request4->execute(array('company_id'=>$row['company_id']));
         header("location:./entity-management.php");
     }
     elseif (!empty($_GET['user_id']))

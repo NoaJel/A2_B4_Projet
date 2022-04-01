@@ -25,57 +25,57 @@
                 </div>
             </div>
             <div id="perm">
-                <input id="sFx2" type="checkbox" value="2" name="sFx2" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx2 == true){echo 'checked';} ?>>
+                <input id="sFx2" type="checkbox" value="2" name="sFx2" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx2) and $sFx2 == true){echo 'checked';} ?>>
                 <label for="sFx2">sFx2</label>
-                <input id="sFx3" type="checkbox" value="3" name="sFx3" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx3 == true){echo 'checked';} ?>>
+                <input id="sFx3" type="checkbox" value="3" name="sFx3" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx3) and $sFx3 == true){echo 'checked';} ?>>
                 <label for="sFx3">sFx3</label>
-                <input id="sFx4" type="checkbox" value="4" name="sFx4" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx4 == true){echo 'checked';} ?>>
+                <input id="sFx4" type="checkbox" value="4" name="sFx4" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx4) and $sFx4 == true){echo 'checked';} ?>>
                 <label for="sFx4">sFx4</label>
-                <input id="sFx5" type="checkbox" value="5" name="sFx5" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx5 == true){echo 'checked';} ?>>
+                <input id="sFx5" type="checkbox" value="5" name="sFx5" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx5) and $sFx5 == true){echo 'checked';} ?>>
                 <label for="sFx5">sFx5</label>
-                <input id="sFx6" type="checkbox" value="6" name="sFx6" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx6 == true){echo 'checked';} ?>>
+                <input id="sFx6" type="checkbox" value="6" name="sFx6" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx6) and $sFx6 == true){echo 'checked';} ?>>
                 <label for="sFx6">sFx6</label>
-                <input id="sFx7" type="checkbox" value="7" name="sFx7" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx7 == true){echo 'checked';} ?>>
+                <input id="sFx7" type="checkbox" value="7" name="sFx7" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx7) and $sFx7 == true){echo 'checked';} ?>>
                 <label for="sFx7">sFx7</label>
-                <input id="sFx8" type="checkbox" value="8" name="sFx8" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx8 == true){echo 'checked';} ?>>
+                <input id="sFx8" type="checkbox" value="8" name="sFx8" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx8) and $sFx8 == true){echo 'checked';} ?>>
                 <label for="sFx8">sFx8</label>
-                <input id="sFx9" type="checkbox" value="9" name="sFx9" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx9 == true){echo 'checked';} ?>>
+                <input id="sFx9" type="checkbox" value="9" name="sFx9" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx9) and $sFx9 == true){echo 'checked';} ?>>
                 <label for="sFx9">sFx9</label>
-                <input id="sFx10" type="checkbox" value="10" name="sFx10" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx10 == true){echo 'checked';} ?>>
+                <input id="sFx10" type="checkbox" value="10" name="sFx10" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx10) and $sFx10 == true){echo 'checked';} ?>>
                 <label for="sFx10">sFx10</label>
-                <input id="sFx11" type="checkbox" value="11" name="sFx11" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx11 == true){echo 'checked';} ?>>
+                <input id="sFx11" type="checkbox" value="11" name="sFx11" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx11) and $sFx11 == true){echo 'checked';} ?>>
                 <label for="sFx11">sFx11</label>
-                <input id="sFx12" type="checkbox" value="12" name="sFx12" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx12 == true){echo 'checked';} ?>>
+                <input id="sFx12" type="checkbox" value="12" name="sFx12" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx12) and $sFx12 == true){echo 'checked';} ?>>
                 <label for="sFx12">sFx12</label>
-                <input id="sFx13" type="checkbox" value="13" name="sFx13" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx13 == true){echo 'checked';} ?>>
+                <input id="sFx13" type="checkbox" value="13" name="sFx13" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx13) and $sFx13 == true){echo 'checked';} ?>>
                 <label for="sFx13">sFx13</label>
-                <input id="sFx14" type="checkbox" value="14" name="sFx14" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx14 == true){echo 'checked';} ?>>
+                <input id="sFx14" type="checkbox" value="14" name="sFx14" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx14) and $sFx14 == true){echo 'checked';} ?>>
                 <label for="sFx14">sFx14</label>
-                <input id="sFx15" type="checkbox" value="15" name="sFx15" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx15 == true){echo 'checked';} ?>>
+                <input id="sFx15" type="checkbox" value="15" name="sFx15" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx15) and $sFx15 == true){echo 'checked';} ?>>
                 <label for="sFx15">sFx15</label>
-                <input id="sFx16" type="checkbox" value="16" name="sFx16" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx16 == true){echo 'checked';} ?>>
+                <input id="sFx16" type="checkbox" value="16" name="sFx16" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx16) and $sFx16 == true){echo 'checked';} ?>>
                 <label for="sFx16">sFx16</label>
-                <input id="sFx17" type="checkbox" value="17" name="sFx17" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx17 == true){echo 'checked';} ?>>
+                <input id="sFx17" type="checkbox" value="17" name="sFx17" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx17) and $sFx17 == true){echo 'checked';} ?>>
                 <label for="sFx17">sFx17</label>
-                <input id="sFx18" type="checkbox" value="18" name="sFx18" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx18 == true){echo 'checked';} ?>>
+                <input id="sFx18" type="checkbox" value="18" name="sFx18" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx18) and $sFx18 == true){echo 'checked';} ?>>
                 <label for="sFx18">sFx18</label>
-                <input id="sFx19" type="checkbox" value="19" name="sFx19" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx19 == true){echo 'checked';} ?>>
+                <input id="sFx19" type="checkbox" value="19" name="sFx19" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx19) and $sFx19 == true){echo 'checked';} ?>>
                 <label for="sFx19">sFx19</label>
-                <input id="sFx20" type="checkbox" value="20" name="sFx20" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx20 == true){echo 'checked';} ?>>
+                <input id="sFx20" type="checkbox" value="20" name="sFx20" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx20) and $sFx20 == true){echo 'checked';} ?>>
                 <label for="sFx20">sFx20</label>
-                <input id="sFx22" type="checkbox" value="22" name="sFx22" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx22 == true){echo 'checked';} ?>>
+                <input id="sFx22" type="checkbox" value="22" name="sFx22" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx22) and $sFx22 == true){echo 'checked';} ?>>
                 <label for="sFx22">sFx22</label>
-                <input id="sFx23" type="checkbox" value="23" name="sFx23" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx23 == true){echo 'checked';} ?>>
+                <input id="sFx23" type="checkbox" value="23" name="sFx23" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx23) and $sFx23 == true){echo 'checked';} ?>>
                 <label for="sFx23">sFx23</label>
-                <input id="sFx24" type="checkbox" value="24" name="sFx24" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx24 == true){echo 'checked';} ?>>
+                <input id="sFx24" type="checkbox" value="24" name="sFx24" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx24) and $sFx24 == true){echo 'checked';} ?>>
                 <label for="sFx24">sFx24</label>
-                <input id="sFx25" type="checkbox" value="25" name="sFx25" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx25 == true){echo 'checked';} ?>>
+                <input id="sFx25" type="checkbox" value="25" name="sFx25" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx25) and $sFx25 == true){echo 'checked';} ?>>
                 <label for="sFx25">sFx25</label>
-                <input id="sFx26" type="checkbox" value="26" name="sFx26" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx26 == true){echo 'checked';} ?>>
+                <input id="sFx26" type="checkbox" value="26" name="sFx26" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx26) and $sFx26 == true){echo 'checked';} ?>>
                 <label for="sFx26">sFx26</label>
-                <input id="sFx32" type="checkbox" value="32" name="sFx32" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx32 == true){echo 'checked';} ?>>
+                <input id="sFx32" type="checkbox" value="32" name="sFx32" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx32) and $sFx32 == true){echo 'checked';} ?>>
                 <label for="sFx32">sFx32</label>
-                <input id="sFx33" type="checkbox" value="33" name="sFx33" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and $sFx33 == true){echo 'checked';} ?>>
+                <input id="sFx33" type="checkbox" value="33" name="sFx33" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx33) and $sFx33 == true){echo 'checked';} ?>>
                 <label for="sFx33">sFx33</label>
             </div>
                 
@@ -109,22 +109,22 @@
             echo '
             <div class="form-field">
                 <label for="login">Login</label>
-                <input name="login" type="text" id="login" placeholder="user login">
+                <input name="login" type="text" id="login" placeholder="user login" required>
             </div>
             <div class="form-field">
                 <label for="password">Password</label>
-                <input name="password" type="password" id="Password" placeholder="user password (can be change later)">
+                <input name="password" type="password" id="password" placeholder="user password (can be change later)" required>
             </div>
             <div class="form-field">
                 <label for="confirm_password">confirm password</label>
-                <input name="confirm_password" type="password" id="confirm_password" placeholder="confirm password">
+                <input name="confirm_password" type="password" id="confirm_password" placeholder="confirm password" required>
             </div>';} ?>
 
 
 
 
             <div class="form-submit">
-                <input type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" value="Validate →">
+                <input id="submit_button" type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" value="Validate →">
             </div>
         </form>
     </main>

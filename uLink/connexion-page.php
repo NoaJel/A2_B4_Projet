@@ -31,7 +31,7 @@ if(isset($_POST["login"]))
             if(password_verify($_POST["login_password"], $result["password"]))
             {
                 setcookie("type", $result["id_user"], time()+3600);
-                header("location:entity-management.php");
+                header("location:index.php");
             }
             else
             {
@@ -50,7 +50,10 @@ if(isset($_POST["login"]))
     <link rel="stylesheet" href="./scss/pages/index.css" type="text/css" />
 </head>
 <body>
-    <?php require_once "header-stu.php" ?>
+<header class="header">
+    <a href="/"><img src="https://ulinkserver.com/images/logo.png" alt="uLink logo" class="ulink-logo" /></a>
+            <span></span> <!-- middle bar -->
+</header>
     <main>
     
 
