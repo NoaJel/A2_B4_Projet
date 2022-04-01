@@ -7,14 +7,17 @@
         </button>
         <ul class="nav-links" data-nav-vertical>
             <?php
-                if ($sFx8) {
-                    echo '<li><a href="#">Your internships</a></li>';
+                if ($sFx9) {
+                    echo '<li><a href="internship-proposal.php">New internship</a></li>';
                 }
                 if ($sFx27 || $sFx28) {
                     echo '<li><a href="./wishlist.php">Wishlist</a></li>';
                 }
+
+                echo '<li><a href="./entity-management.php">Research <i class="fas fa-search"></i></a></li> ';
+                
                 if ($sFx8) {
-                    echo '<li><a href="#">Research <i class="fas fa-search"></i></a></li> ';
+                    echo '<li><a href="./adv-search.php">Internships</a></li> ';
                 }
             ?>
         </ul>

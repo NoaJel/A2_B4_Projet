@@ -1,4 +1,6 @@
-<?php include("./php/companyAdd.php")?>
+<?php 
+include("./php/companyAdd.php")
+?>
 
 <?php require_once "head.php" ?>
     <meta name="description" content="Add or edit a company to uLink." />
@@ -46,7 +48,7 @@
             <div class="form-field">
                 <label for="city">City</label>
                 <select name="city" id="city">
-                    <option>-- Enter your postal code first (autocompletion) --</option>
+                    <option aria-placeholder="Enter your postal code first (autocompletion) "value="<?php if (isset($_POST["update"])){echo $row['address_complement'];}?>">-- Enter your postal code first (autocompletion) --</option>
                 </select>
             </div>
             <div class="form-submit">
