@@ -1,15 +1,10 @@
 <?php
     require_once "./php/database_connection.php";
     $result = null;
-<<<<<<< HEAD
     $reload = false;
     if (
         isset($_GET["id"])
     ) {
-=======
-
-    if (isset($_GET["id"])) {
->>>>>>> 89f0ef493fc4eb47f60c5ada440714887efd077b
         $request = $connect->prepare(<<<EOD
             SELECT *
             FROM wish
