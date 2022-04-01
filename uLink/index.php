@@ -1,8 +1,7 @@
 <?php
-if(!isset($_COOKIE["type"]))
-{
- header("location:connexion-page.php");
-}
+    if (!isset($_COOKIE["type"])) {
+        header("location:connexion-page.php");
+    }
 ?>
 
 

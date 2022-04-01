@@ -2,9 +2,7 @@
     require_once "./php/database_connection.php";
     $result = null;
     $reload = false;
-    if (
-        isset($_GET["id"])
-    ) {
+    if (isset($_GET["id"])) {
         $request = $connect->prepare(<<<EOD
             SELECT *
             FROM wish
