@@ -22,7 +22,7 @@ function enableFocus(elements) {
 
 
 
-disableFocus(loginInputs); // disable it on the load of the page as the login modal is not opened by default
+disableFocus(loginInputs);  // disable it on the load of the page as the login modal is not opened by default
 
 openLoginModal.forEach(button => {
     button.addEventListener("click", () => {

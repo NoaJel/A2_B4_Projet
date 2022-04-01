@@ -9,7 +9,15 @@ if(!isset($_COOKIE["type"]))
 <?php require_once "head.php" ?>
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
+<<<<<<< HEAD
+<<<<<<< HEAD:index.php
+    <link rel="preload" as="style" href="./scss/pages/index.css" type="text/css" onload="this.rel='stylesheet'" />
+=======
     <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/index.css" type="text/css" onload="this.rel='stylesheet'" />
+>>>>>>> origin:uLink/index.php
+=======
+    <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/index.css" type="text/css" onload="this.rel='stylesheet'" />
+>>>>>>> main
 </head>
 <body>
     <?php require_once "header-stu.php" ?>

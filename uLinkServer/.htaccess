@@ -38,7 +38,7 @@ SetEnv FR Europe/Paris
     </FilesMatch>
     # disable caching for scripts and other dynamic files :
     <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
-        Header unset Cache-Control
+        #Header unset Cache-Control
     </FilesMatch>
 </IfModule>
 

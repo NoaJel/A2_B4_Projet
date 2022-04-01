@@ -39,13 +39,30 @@ h1 {
     padding: 0.5rem 1rem;
 }
 
+
+
 .checked {
     color: orange;
 }
 .child-ranking button {
     border-radius: 1rem;
     background-color: var(--clr-primary-200);
-    border: 2px solid var(--clr-accent-200); 
+    border: 2px solid var(--clr-accent-200);
+}
+.star-avg i {
+    font-size: 1.2rem;
+    color: var(--clr-accent-200);
+}
+
+.child-ranking button:hover,
+.child-ranking button:focus {
+  border-color: var(--clr-primary-200);
+}
+
+.rating-number {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3.6rem;
 }
 
 .sous-parent-2 {
@@ -94,9 +111,8 @@ h1 {
 
 .internship {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    height: 4.5rem;
 }
 
 .internship i {
@@ -107,8 +123,8 @@ h1 {
     @include link-reset;
 
     display: flex;
-    flex-direction: row;   
-    width: 60rem;
+    flex-direction: column;   
+    height: 4.5rem;
     justify-content: center;
     align-items: center;
     border-radius: 1rem;
@@ -215,7 +231,7 @@ h1 {
 
     background-color: rgba(#000, 0.6);
 
-    z-index: 49; // just one step away from being in front of the comment
+    z-index: 49; // just one step away from being in front of the comment modal
     opacity: 0;
     transition: 0.2s ease-in-out;
 
@@ -229,13 +245,18 @@ h1 {
 
  // COMMENT FORM ==================================
 
+
+.comment-rate {
+    display: flex;
+    max-width: 60rem;
+    width: 80%;
+}
 .comment-field textarea {
     @include input-reset;
     border-radius: 6px;
 
     padding: 0.25rem;
     height: 20rem;
-    width: 40rem;
     resize: vertical;
     border-bottom-right-radius: 0;
 }

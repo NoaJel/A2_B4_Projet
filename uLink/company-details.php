@@ -29,13 +29,17 @@
 
                     Users ranking
                     <div class="comment-btn">
-                        <i class="fas fa-star checked"></i>
-                        <i class="fas fa-star checked"></i>
-                        <i class="fas fa-star checked"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <button data-comment-target="#comment-container" class="comment-btn">leave a comment →</button>
+                        <div class="star-avg">
+                            <i class="rating-avg far fa-star"></i>
+                            <i class="rating-avg far fa-star"></i>
+                            <i class="rating-avg far fa-star"></i>
+                            <i class="rating-avg far fa-star"></i>
+                            <i class="rating-avg far fa-star"></i>
+                            <input id="avg" type="hidden" value=3.5 />
+                        </div>
+                        <button data-comment-target="#comment-container" class="comment-btn">Rate this company →</button>
                     </div>
+                    <div class="rating-number"></div>
                 </div>
             </div>
             <div class="sous-parent-2">
@@ -79,13 +83,14 @@
                 </button>
             </div>
             <div class="comment-main">
-                <form action="" method="POST">
+                <form action="" method="POST" class="comment-rate">
                     <div class="star-rank">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="rating-star far fa-star"></i>
+                        <i class="rating-star far fa-star"></i>
+                        <i class="rating-star far fa-star"></i>
+                        <i class="rating-star far fa-star"></i>
+                        <i class="rating-star far fa-star"></i>
+                        <div class="result"></div>
                     </div>
                     <div class="comment-field">
                         <label for="comment"></label>
