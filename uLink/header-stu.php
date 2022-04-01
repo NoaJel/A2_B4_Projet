@@ -11,7 +11,7 @@
                 echo '<li><a href="#">Your internships</a></li>';
             }
             if ($sFx27 || $sFx28){
-                echo '<li><a href="#">Wishlist</a></li>';
+                echo '<li><a href="./wishlist.php">Wishlist</a></li>';
             }
             if ($sFx8){
                 echo '<li><a href="#">Research <i class="fas fa-search"></i></a></li> ';

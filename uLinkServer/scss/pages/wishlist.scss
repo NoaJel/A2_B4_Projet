@@ -1,0 +1,140 @@
+@use "../base/" as *;
+
+h1 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.page {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#wishlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.wish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid rgb(206, 206, 206);
+}
+
+.wish-info {
+    display: flex;
+    flex-direction: column;
+}
+.wish i {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+}
+
+.wish h2, 
+.wish h3,
+.wish h4 {
+    font-weight: normal;
+    font-family: var(--ff-primary);
+}
+
+.btn-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+.change {
+    display: flex;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: white;
+    /* border: 2px solid rgb(241, 233, 154);
+    background-color: rgb(250, 246, 196); */
+    font-size: 1.2rem;
+}
+
+#details-window {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    padding: 0.5rem;
+    height:fit-content;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 0.6rem;
+
+}
+
+#details-window p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    width: 50rem;
+    opacity: 60%;
+}
+
+#internship-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#internship-info h2,
+#internship-info h3,
+#internship-info h4 {
+    font-weight: normal;
+    font-family: var(--ff-primary);
+}
+
+#internship-info h2 {
+    font-size: 2.5rem;
+}
+#more {
+    padding-top: 1rem;
+}
+#more-info {
+    color :rgb(128, 128, 128)
+}
+
+#number-of-places {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#internship-info button {
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+/* #internship-info .wish-info {
+    display: flex;
+} */
+
+@media (max-width: 476px) { //allow us to put the details window above the wishlist
+    .page {
+        flex-direction: column;
+    }
+
+    #details-window {
+        order: -1;
+    }
+}

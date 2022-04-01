@@ -1,0 +1,204 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-200: #faf6d1;
+  --clr-primary-500: #824936;
+  --clr-primary-700: #4b4737;
+  --clr-accent-200: #f1d900;
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #222c2a;
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-accent: "intro-bold", sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-accent);
+}
+
+main {
+  padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+::placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+h1 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#wishlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.wish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  border: 2px solid #cecece;
+}
+
+.wish-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.wish i {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+}
+
+.wish h2,
+.wish h3,
+.wish h4 {
+  font-weight: normal;
+  font-family: var(--ff-primary);
+}
+
+.btn-change {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.change {
+  display: flex;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  /* border: 2px solid rgb(241, 233, 154);
+  background-color: rgb(250, 246, 196); */
+  font-size: 1.2rem;
+}
+
+#details-window {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  padding: 0.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 0.6rem;
+}
+
+#details-window p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  width: 50rem;
+  opacity: 60%;
+}
+
+#internship-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#internship-info h2,
+#internship-info h3,
+#internship-info h4 {
+  font-weight: normal;
+  font-family: var(--ff-primary);
+}
+
+#internship-info h2 {
+  font-size: 2.5rem;
+}
+
+#more {
+  padding-top: 1rem;
+}
+
+#more-info {
+  color: gray;
+}
+
+#number-of-places {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#internship-info button {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+}
+
+/* #internship-info .wish-info {
+    display: flex;
+} */
+@media (max-width: 476px) {
+  .page {
+    flex-direction: column;
+  }
+
+  #details-window {
+    order: -1;
+  }
+}/*# sourceMappingURL=wishlist.css.map */
