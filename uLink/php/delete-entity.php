@@ -1,9 +1,7 @@
 <?php
 require_once "database_connection.php";
-if (!empty($_GET['action']) and $_GET["action"] == "delete")
-{
-    if (!empty($_GET['company_name']))
-    {
+if (!empty($_GET['action']) and $_GET["action"] == "delete") {
+    if (!empty($_GET['company_name'])) {
         echo "del company";
         $param = $_GET["company_name"];
         $request = $connect->prepare("SELECT * FROM company NATURAL JOIN address WHERE company.name=:name");
@@ -17,9 +15,7 @@ if (!empty($_GET['action']) and $_GET["action"] == "delete")
         $request4 = $connect->prepare("DELETE FROM company WHERE company_id = :company_id");
         $request4->execute(array('company_id'=>$row['company_id']));
         header("location:./entity-management.php");
-    }
-    elseif (!empty($_GET['user_id']))
-    {
+    } elseif (!empty($_GET['user_id'])) {
         echo "del user";
         $request = $connect->prepare("DELETE FROM be WHERE id_user = :id_user");
         $request->execute(array('id_user'=>$_GET["user_id"]));
@@ -32,4 +28,3 @@ if (!empty($_GET['action']) and $_GET["action"] == "delete")
         header("location:./entity-management.php");
     }
 }
-?>
