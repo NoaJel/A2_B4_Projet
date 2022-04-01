@@ -42,6 +42,12 @@ SetEnv FR Europe/Paris
     </FilesMatch>
 </IfModule>
 
+# enable password security
+AuthName "Please register before entering the site."
+AuthType Basic
+AuthUserFile "C:/www/A2_B4_Projet/uLinkServer/.htpasswd"
+Require valid-user
+
 # stop hotlinking and serve alternate content
 <IfModule mod_rewrite.c>
 	RewriteCond %{HTTP_REFERER} !^$

@@ -15,17 +15,50 @@
     .search-element {
         border-radius: 6px;
         padding: 0.5rem;
+
+        &:not(#searchbar > *)
+        {
+            width: 100%;
+        }
     }
 
-    .searchbar button {
+    .search-element:not(#searchbar > *):focus {
+        border: 2px solid var(--clr-accent-200);
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+
+    #internship-search {
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    #searchbar button {
         @include btn-reset;
         @include btn;
         padding: 0.3rem 0.5rem;
     }
 
-    .searchbar button:focus,
-    .searchbar button:hover {
+    #searchbar button:focus,
+    #searchbar button:hover {
         @include btn-focus-hover;
+    }
+
+    .filters {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .filter-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: MIN(90%, 40rem);
+    }
+
+    .filter-container label {
+        padding: 0.5rem 0.5rem 0.5 0;
+        cursor: pointer;
     }
 
     .internship-card {
