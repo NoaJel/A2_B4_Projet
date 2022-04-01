@@ -11,10 +11,11 @@ let details_window = document.getElementById("details-window");
 let internship_info = document.getElementById("internship-info");
 let placeholder = document.getElementById("placeholder");
 
-/* internship_info.innerHTML = ""; */
+internship_info.innerHTML = "";
+placeholder.innerHTML = "";
 
-details_window.innerHTML = "";
-details_window.appendChild(placeholder);
+/* details_window.innerHTML = ""; */
+/* details_window.appendChild(placeholder); */
 console.log(list);
 showList();
 
@@ -67,10 +68,10 @@ function showPageInfo(){
 }
 
 function details() {
-    details_window.innerHTML = "";
-    details_window.appendChild(internship_info);
+    /* details_window.innerHTML = "";
+    /* details_window.appendChild(internship_info); */
     details_window.setAttribute("style", "background-color: rgb(243, 243, 243); border: 2px solid rgb(206, 206, 206);");
-    /* listC.map((wish) =>{
+    listC.map((wish) =>{
         wish.onclick = () => {
             i = listC.indexOf(wish);
             internship_info.innerHTML = "";
@@ -82,6 +83,6 @@ function details() {
             console.log(internship_info);
             console.log(listW[i]);
         }
-    }) */
+    })
 }
 
