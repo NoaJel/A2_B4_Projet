@@ -1,3 +1,5 @@
+//Initialization of variables
+
 let list = document.querySelectorAll(".wish");
 let listW = document.querySelectorAll(".wish-info");
 const listC = [...document.getElementsByClassName("wish")];

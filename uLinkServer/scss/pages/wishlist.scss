@@ -129,7 +129,7 @@ h1 {
     display: flex;
 } */
 
-@media (max-width: 476px) {
+@media (max-width: 476px) { //allow us to put the details window above the wishlist
     .page {
         flex-direction: column;
     }
