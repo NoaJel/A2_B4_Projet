@@ -109,22 +109,22 @@
             echo '
             <div class="form-field">
                 <label for="login">Login</label>
-                <input name="login" type="text" id="login" placeholder="user login">
+                <input name="login" type="text" id="login" placeholder="user login" required>
             </div>
             <div class="form-field">
                 <label for="password">Password</label>
-                <input name="password" type="password" id="Password" placeholder="user password (can be change later)">
+                <input name="password" type="password" id="password" placeholder="user password (can be change later)" required>
             </div>
             <div class="form-field">
                 <label for="confirm_password">confirm password</label>
-                <input name="confirm_password" type="password" id="confirm_password" placeholder="confirm password">
+                <input name="confirm_password" type="password" id="confirm_password" placeholder="confirm password" required>
             </div>';} ?>
 
 
 
 
             <div class="form-submit">
-                <input type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" value="Validate →">
+                <input id="submit_button" type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" value="Validate →">
             </div>
         </form>
     </main>
