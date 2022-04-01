@@ -2,7 +2,7 @@
     <?php require "./php/internshipAdd.php" ?>
     <meta charset="description" content="Create an internship proposal here!" />
     <title>Create an internship proposal</title>
-    <link rel="stylesheet" href="https://ulinkserver.com/scss/pages/internship-proposal.css" />
+    <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/internship-proposal.css" onload="this.rel='stylesheet'" />
     <script src="https://ulinkserver.com/js/header-stu.js" defer></script>
 </head>
 <body>
