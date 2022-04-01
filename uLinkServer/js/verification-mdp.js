@@ -1,18 +1,17 @@
 $(document).ready(() => {
     $('#confirm_password').keyup(() => {
-        var confirm_password = $.trim($("#confirm_password").val());
-        var password = $.trim($("#password").val());
+        var confirm_password = $("#confirm_password").val();
+        var password = $("#password").val();
+        
         if (password == confirm_password){
-
-
-
-
+            $('#submit_button').prop('disabled', false);
         }
         else
         {
-            
+            $('#submit_button').prop('disabled', true);
         }
     });
+    alert (password, confirm_password);
 });
 
 
