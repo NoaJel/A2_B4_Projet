@@ -11,7 +11,6 @@ $(document).ready(() => {
             $('#submit_button').prop('disabled', true);
         }
     });
-    alert (password, confirm_password);
 });
 
 

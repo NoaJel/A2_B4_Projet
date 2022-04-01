@@ -72,7 +72,7 @@
         </div>
         <h1>Internship proposal</h1>
         <div class="internship">
-            <a class="link" href="internship_proposal.php"><i class="fas fa-plus"></i></a>
+            <a class="link" href="internship-proposal.php"><i class="fas fa-plus"></i></a>
         </div>
         <div class="comment-container" id="comment-container" role="dialog" aria-modal="true">
             <div class="comment-header">
