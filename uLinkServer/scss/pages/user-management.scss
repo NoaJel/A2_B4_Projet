@@ -1,0 +1,86 @@
+@use "../base/" as *;
+
+::placeholder {
+    opacity: 1;
+    color: grey;
+    font-size: 1rem;
+
+}
+
+body {
+    padding-left: calc(100vw - 100%);
+    box-sizing: content-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.role {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.role label {
+    margin-right: 2rem;
+}
+
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-field input {
+    @include input-reset;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+
+    border-radius: 20px;
+
+    font-size: 1.05rem;
+}
+
+.form-submit {
+    display: flex;
+    flex-direction: row-reverse;   
+}
+
+.form-submit input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+
+    border-radius: 20px;
+
+    font-size: 1.05rem;
+    width: 200px;
+}
+
+.form-field input,
+.form-submit input {
+    font-family: var(--ff-primary)
+}
+
+.form-field input:focus,
+.form-submit input:focus {
+    border: solid 2px var(--clr-accent-200)
+}
+
+.form-field label {
+    font-size: 1.1rem;
+}
+
+#perm {
+    display: none;
+}

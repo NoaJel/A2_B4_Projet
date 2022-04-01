@@ -1,8 +1,8 @@
 <?php require_once "head.php" ?>
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
-    <link rel="stylesheet" href="./scss/pages/company-details.css" type="text/css" />
-    <script type="text/javascript" src="./js/comment-modal.js" defer></script>
+    <link rel="stylesheet" href="https://ulinkserver.com/scss/pages/company-details.css" type="text/css" />
+    <script type="text/javascript" src="https://ulinkserver.com/js/comment-modal.js" defer></script>
 </head>
 <body>
     <?php require_once "header-stu.php" ?>
