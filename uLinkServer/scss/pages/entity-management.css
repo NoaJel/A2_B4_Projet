@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-200: #faf6d1;
+  --clr-primary-500: #824936;
+  --clr-primary-700: #4b4737;
+  --clr-accent-200: #f1d900;
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #222c2a;
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-accent: "intro-bold", sans-serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-accent);
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.0625rem;
+}
+
+main {
+  padding: 8rem 1.5rem 3rem 1.5rem;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+::placeholder {
+  opacity: 1;
+  color: grey;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+}
+
+.flex-row-container {
+  display: flex;
+  align-items: center;
+}
+.flex-row-container.main {
+  gap: 1.5rem 3rem;
+}
+.flex-row-container.top-section {
+  gap: 2.5rem;
+  font-size: 1.1rem;
+}
+.flex-row-container.search-section {
+  gap: 1rem;
+}
+.flex-row-container.sort-entity {
+  gap: 1.5rem;
+}
+.flex-row-container.cards-section {
+  gap: 2.5rem 5rem;
+  flex-wrap: wrap;
+}
+.flex-row-container.card-header {
+  justify-content: space-between;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-container.entity-card {
+  gap: 0.5rem;
+}
+
+.top-section input {
+  padding: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.add-entity {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sort-entity {
+  min-width: 33.3333333333%;
+  width: 50rem;
+}
+
+.sort-btn {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+  border-color: black;
+  border-style: solid;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  background-color: var(--clr-accent-200);
+}
+
+.sort-btn:focus,
+.sort-btn:hover {
+  border: solid 2px var(--clr-primary-200);
+}
+
+.entity-card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.entity-card img {
+  width: 18rem;
+  padding: 0 4rem;
+}
+
+.entity-card p {
+  width: 0;
+  min-width: 100%;
+}
+
+.card-header {
+  padding-inline: 0.25rem;
+}
+
+.select-entity button:hover label {
+  pointer-events: none;
+}/*# sourceMappingURL=entity-management.css.map */

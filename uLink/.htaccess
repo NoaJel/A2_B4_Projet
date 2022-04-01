@@ -25,6 +25,12 @@ ServerSignature Off
 # set the server timezone
 SetEnv FR Europe/Paris
 
+# enable password security
+AuthName "Please register before entering the site."
+AuthType Basic
+AuthUserFile "C:/www/A2_B4_Projet/uLinkServer/.htpasswd"
+Require valid-user
+
 # stop hotlinking and serve alternate content
 <IfModule mod_rewrite.c>
 	RewriteCond %{HTTP_REFERER} !^$
@@ -45,5 +51,5 @@ RewriteCond %{HTTP_USER_AGENT} ^Zeus
 RewriteRule ^.* - [F,L]
 
 # secure directory by disabling script execution
-AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
-Options -ExecCGI
+#AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
+#Options -ExecCGI
