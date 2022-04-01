@@ -2,7 +2,7 @@
 <?php require_once "./php/userAdd.php"; ?>
     <meta name="description" content="uLink is an efficient website to find your internship quickly. Go faster with uLink!" />
     <title>uLink - Home Page</title>
-    <link rel="stylesheet" href="https://ulinkserver.com/scss/pages/user-management.css" type="text/css" />
+    <link rel="preload" as="style" href="https://ulinkserver.com/scss/pages/user-management.css" type="text/css" onload="this.rel='stylesheet'" />
     <script type="text/javascript" src="https://ulinkserver.com/js/verification-mdp.js" defer></script>
 </head>
 <body>

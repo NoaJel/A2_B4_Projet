@@ -1998,3 +1998,7 @@
 [Fri Apr 01 08:57:56.117186 2022] [php7:notice] [pid 20316:tid 1848] [client 127.0.0.1:53296] PHP Notice:  Undefined variable: sFx27 in C:\\www\\A2_B4_Projet\\uLink\\adv-search.php on line 32, referer: https://ulink.com/adv-search.php?internship_search=a
 [Fri Apr 01 08:57:56.117186 2022] [php7:notice] [pid 20316:tid 1848] [client 127.0.0.1:53296] PHP Notice:  Undefined variable: sFx27 in C:\\www\\A2_B4_Projet\\uLink\\adv-search.php on line 32, referer: https://ulink.com/adv-search.php?internship_search=a
 [Fri Apr 01 09:05:39.057002 2022] [php7:notice] [pid 20316:tid 1824] [client 127.0.0.1:50809] PHP Notice:  Undefined variable: reload in C:\\www\\A2_B4_Projet\\uLink\\php\\internship-advanced-search.php on line 35
+[Fri Apr 01 12:11:30.706450 2022] [php7:notice] [pid 4024:tid 1892] [client 127.0.0.1:63297] PHP Notice:  Undefined variable: sFx8 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 10
+[Fri Apr 01 12:11:30.707448 2022] [php7:notice] [pid 4024:tid 1892] [client 127.0.0.1:63297] PHP Notice:  Undefined variable: sFx27 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 13
+[Fri Apr 01 12:11:30.707448 2022] [php7:notice] [pid 4024:tid 1892] [client 127.0.0.1:63297] PHP Notice:  Undefined variable: sFx28 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 13
+[Fri Apr 01 12:11:30.707448 2022] [php7:notice] [pid 4024:tid 1892] [client 127.0.0.1:63297] PHP Notice:  Undefined variable: sFx8 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 16

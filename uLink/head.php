@@ -23,5 +23,5 @@
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="apple-touch-icon" href="https://ulink.com/images/icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#f1d900" />
-    <!-- <script src="https://ulinkserver.com/js/app.js" defer></script> -->
+    <script src="https://ulinkserver.com/js/app.js" defer></script>
     <!-- /PWA -->
