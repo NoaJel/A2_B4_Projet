@@ -1,3 +1,4 @@
+<?php require_once "./php/permissions.php"?>
 <header class="header">
     <a href="/"><img src="https://ulinkserver.com/images/logo.png" alt="uLink logo" class="ulink-logo" /></a>
     <nav class="parent-burger">
@@ -5,9 +6,18 @@
             <span></span> <!-- middle bar -->
         </button>
         <ul class="nav-links" data-nav-vertical>
-            <li><a href="#">Your internships</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Research <i class="fas fa-search"></i></a></li>
+        <?php
+            if ($sFx8){
+                echo '<li><a href="#">Your internships</a></li>';
+            }
+            if ($sFx27 || $sFx28){
+                echo '<li><a href="./wishlist.php">Wishlist</a></li>';
+            }
+            if ($sFx8){
+                echo '<li><a href="#">Research <i class="fas fa-search"></i></a></li> ';
+            }
+            
+            ?>
         </ul>
     </nav>
     <div class="nav-icons">
@@ -45,3 +55,7 @@
     </div>
     <div id="modal-overlay"></div>
 </header>
+
+
+
+

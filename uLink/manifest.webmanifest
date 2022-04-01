@@ -1,0 +1,35 @@
+{
+    "name": "uLink",
+    "short_name": "uLink",
+    "start_url": "./index.php",
+    "display": "standalone",
+    "background_color": "#fdf9f0",
+    "theme_color": "#f1d900",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src":"https://ulinkserver.com/images/icons/android-chrome-192x192.png",
+            "sizes":"192x192",
+            "type":"image/png",
+            "purpose": "any"
+        },
+        {
+            "src":"https://ulinkserver.com/images/icons/maskable/maskable_icon_x192.png",
+            "sizes":"192x192",
+            "type":"image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src":"https://ulinkserver.com/images/icons/android-chrome-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png",
+            "purpose": "any"
+        },
+        {
+            "src":"https://ulinkserver.com/images/icons/maskable/maskable_icon_x512.png",
+            "sizes":"512x512",
+            "type":"image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
