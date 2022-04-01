@@ -82,6 +82,7 @@ function details() {
             let clone =""
             clone = listW[i].cloneNode(true);
             internship_info.appendChild(clone);
+            internship_info.innerHTML += "<button>Apply</button>";
             console.log(internship_info);
             console.log(listW[i]);
         }
