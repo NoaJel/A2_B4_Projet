@@ -78,8 +78,7 @@
                 <input id="sFx33" type="checkbox" value="33" name="sFx33" <?php if (!empty($_GET['action']) and $_GET["action"] == "update" and isset($sFx33) and $sFx33 == true){echo 'checked';} ?>>
                 <label for="sFx33">sFx33</label>
             </div>
-                
-
+            
             <div class="form-field">
                 <label for="name">Name</label>
                 <input name="name" type="text" id="name" placeholder="user's name" value="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo $line['name'];} ?>">
@@ -105,23 +104,26 @@
             </select>
             </div>
 
-            <?php if ((!empty($_GET['action']) and $_GET["action"] == "update" && $line['id_user'] == $_COOKIE['type']) || empty($_GET['action'])){
-            echo '
-            <div class="form-field">
-                <label for="login">Login</label>
-                <input name="login" type="text" id="login" placeholder="user login" required>
-            </div>
-            <div class="form-field">
-                <label for="password">Password</label>
-                <input name="password" type="password" id="password" placeholder="user password (can be change later)" required>
-            </div>
-            <div class="form-field">
-                <label for="confirm_password">confirm password</label>
-                <input name="confirm_password" type="password" id="confirm_password" placeholder="confirm password" required>
-            </div>';} ?>
-
-
-
+            <?php if (
+                (
+                    !empty($_GET['action'])
+                    && $_GET["action"] == "update"
+                    && $line['id_user'] == $_COOKIE['type']
+                ) || empty($_GET['action'])
+            ): ?>
+                <div class="form-field">
+                    <label for="login">Login</label>
+                    <input name="login" type="text" id="login" placeholder="user login" required>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" id="password" placeholder="user password (can be change later)" required>
+                </div>
+                <div class="form-field">
+                    <label for="confirm_password">confirm password</label>
+                    <input name="confirm_password" type="password" id="confirm_password" placeholder="confirm password" required>
+                </div>
+            <?php endif; ?>
 
             <div class="form-submit">
                 <input id="submit_button" type="submit" name="<?php if (!empty($_GET['action']) and $_GET["action"] == "update"){echo "valid_update";} else{echo "insert";}?>" value="Validate →">

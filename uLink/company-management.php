@@ -1,8 +1,4 @@
-<?php 
-include("./php/companyAdd.php")
-?>
-
-
+<?php include("./php/companyAdd.php")?>
 
 <?php require_once "head.php" ?>
     <meta name="description" content="Add or edit a company to uLink." />
