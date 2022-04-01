@@ -88,8 +88,8 @@
         $request->execute(
             array(
                 "skills" => $param,
-                "name" => $filter,
-                "internship_id" => $filter // some parameters are missing as we don't have them in the database (duration, etc.)
+                "name" => $companyFilter,
+                "internship_id" => $idFilter // some parameters are missing as we don't have them in the database (duration, etc.)
             )
         );
         $result = $request->fetchAll();

@@ -1,1 +1,0 @@
-[Tue Mar 29 09:51:46.775124 2022] [autoindex:error] [pid 3664:tid 1884] [client 127.0.0.1:60684] AH01276: Cannot serve directory C:/www/A2_B4_Projet/uLinkServer/: No matching DirectoryIndex (index.php) found, and server-generated directory index forbidden by Options directive
