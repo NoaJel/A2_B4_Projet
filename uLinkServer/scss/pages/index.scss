@@ -1,0 +1,22 @@
+@use "../base/" as *;
+
+#home {
+    display: flex;
+    gap: 5rem;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+}
+
+#img {
+    display: flex;
+    flex-direction: column;
+    width: 450rem;
+    max-width: 80%;
+}
+
+#image {
+    height: 10rem;
+}
