@@ -3627,3 +3627,17 @@
 127.0.0.1 - - [01/Apr/2022:12:14:36 +0200] "GET /fontawesome-free-5.15.4-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
 127.0.0.1 - - [01/Apr/2022:12:14:38 +0200] "GET /images/favicon.ico HTTP/1.1" 200 1618
 127.0.0.1 - - [01/Apr/2022:12:20:51 +0200] "-" 408 -
+127.0.0.1 - - [01/Apr/2022:12:46:58 +0200] "GET /scss/main.css HTTP/1.1" 200 2102
+127.0.0.1 - - [01/Apr/2022:12:46:58 +0200] "GET /js/header-stu.js HTTP/1.1" 200 886
+127.0.0.1 - - [01/Apr/2022:12:46:58 +0200] "GET /images/logo.png HTTP/1.1" 200 4696
+127.0.0.1 - - [01/Apr/2022:12:46:58 +0200] "GET /jquery/jquery-3.6.0.min.js HTTP/1.1" 200 30848
+127.0.0.1 - - [01/Apr/2022:12:46:58 +0200] "GET /fonts/fonts.css HTTP/1.1" 200 302
+127.0.0.1 - - [01/Apr/2022:12:46:58 +0200] "GET /fontawesome-free-5.15.4-web/css/all.min.css HTTP/1.1" 200 12863
+127.0.0.1 - - [01/Apr/2022:12:46:59 +0200] "GET /fonts/intro-trial-bd-webfont.woff2 HTTP/1.1" 200 12396
+127.0.0.1 - - [01/Apr/2022:12:46:59 +0200] "GET /images/favicon.ico HTTP/1.1" 200 1618
+127.0.0.1 - - [01/Apr/2022:12:47:09 +0200] "GET /images/internship.jpg HTTP/1.1" 200 129763
+127.0.0.1 - - [01/Apr/2022:12:47:09 +0200] "GET /scss/pages/index.css HTTP/1.1" 200 675
+127.0.0.1 - - [01/Apr/2022:12:47:09 +0200] "GET /fontawesome-free-5.15.4-web/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 78268
+127.0.0.1 - - [01/Apr/2022:12:47:20 +0200] "GET /scss/pages/adv-search.css HTTP/1.1" 200 905
+127.0.0.1 - - [01/Apr/2022:12:47:20 +0200] "GET /js/adv-search.js HTTP/1.1" 200 227
+127.0.0.1 - - [01/Apr/2022:12:51:58 +0200] "-" 408 -

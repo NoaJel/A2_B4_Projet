@@ -1611,3 +1611,15 @@
 127.0.0.1 - grpeleven [01/Apr/2022:12:15:51 +0200] "GET /adv-search.php?internship_search=&duration_filter_search=&location_filter_search=&company_filter_search=&id_filter_search= HTTP/1.1" 200 9823
 127.0.0.1 - - [01/Apr/2022:12:15:51 +0200] "GET /manifest.webmanifest HTTP/1.1" 401 381
 127.0.0.1 - grpeleven [01/Apr/2022:12:38:15 +0200] "POST /phpmyadmin/index.php?route=/ HTTP/1.1" 200 1747
+127.0.0.1 - - [01/Apr/2022:12:46:50 +0200] "GET / HTTP/1.1" 401 381
+127.0.0.1 - grpeleven [01/Apr/2022:12:46:58 +0200] "GET / HTTP/1.1" 302 5944
+127.0.0.1 - grpeleven [01/Apr/2022:12:46:58 +0200] "GET /connexion-page.php HTTP/1.1" 200 2959
+127.0.0.1 - grpeleven [01/Apr/2022:12:46:58 +0200] "GET /scss/pages/index.css HTTP/1.1" 404 191
+127.0.0.1 - - [01/Apr/2022:12:46:59 +0200] "GET /manifest.webmanifest HTTP/1.1" 401 381
+127.0.0.1 - grpeleven [01/Apr/2022:12:47:09 +0200] "POST /connexion-page.php HTTP/1.1" 302 2959
+127.0.0.1 - grpeleven [01/Apr/2022:12:47:09 +0200] "GET /index.php HTTP/1.1" 200 5601
+127.0.0.1 - - [01/Apr/2022:12:47:09 +0200] "GET /manifest.webmanifest HTTP/1.1" 401 381
+127.0.0.1 - grpeleven [01/Apr/2022:12:47:20 +0200] "GET /adv-search.php HTTP/1.1" 200 7533
+127.0.0.1 - - [01/Apr/2022:12:47:20 +0200] "GET /manifest.webmanifest HTTP/1.1" 401 381
+127.0.0.1 - grpeleven [01/Apr/2022:12:47:32 +0200] "GET /adv-search.php?internship_search=&duration_filter_search=&location_filter_search=&company_filter_search=&id_filter_search= HTTP/1.1" 200 9827
+127.0.0.1 - - [01/Apr/2022:12:47:34 +0200] "GET /manifest.webmanifest HTTP/1.1" 401 381

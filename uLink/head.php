@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" />
     <!-- /FONTS -->
     <!-- FONTAWESOME -->
-	<link rel="preload" as="style" href="https://ulinkserver.com/fontawesome-free-5.15.4-web/css/all.min.css" onload="this.rel='stylesheet'" />
+	<link rel="preload" as="style" href="https://ulinkserver.com/vendors/fontawesome-free-5.15.4-web/css/all.min.css" onload="this.rel='stylesheet'" />
     <!-- /FONTAWESOME -->
-    <script type="text/javascript" src="https://ulinkserver.com/jquery/jquery-3.6.0.min.js" defer></script>
+    <script type="text/javascript" src="https://ulinkserver.com/vendors/jquery/jquery-3.6.0.min.js" defer></script>
     <script type="text/javascript" src="https://ulinkserver.com/js/header-stu.js" defer></script>
     <!-- PWA -->
     <meta name="theme-color" content="#f1d900">
