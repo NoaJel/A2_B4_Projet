@@ -2006,3 +2006,7 @@
 [Fri Apr 01 12:46:58.158229 2022] [php7:notice] [pid 17836:tid 1884] [client 127.0.0.1:63570] PHP Notice:  Undefined variable: sFx27 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 13
 [Fri Apr 01 12:46:58.159230 2022] [php7:notice] [pid 17836:tid 1884] [client 127.0.0.1:63570] PHP Notice:  Undefined variable: sFx28 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 13
 [Fri Apr 01 12:46:58.159230 2022] [php7:notice] [pid 17836:tid 1884] [client 127.0.0.1:63570] PHP Notice:  Undefined variable: sFx8 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 16
+[Fri Apr 01 14:15:21.560716 2022] [php7:notice] [pid 7988:tid 1936] [client 127.0.0.1:64710] PHP Notice:  Undefined variable: sFx9 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 10
+[Fri Apr 01 14:15:21.560716 2022] [php7:notice] [pid 7988:tid 1936] [client 127.0.0.1:64710] PHP Notice:  Undefined variable: sFx27 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 13
+[Fri Apr 01 14:15:21.560716 2022] [php7:notice] [pid 7988:tid 1936] [client 127.0.0.1:64710] PHP Notice:  Undefined variable: sFx28 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 13
+[Fri Apr 01 14:15:21.560716 2022] [php7:notice] [pid 7988:tid 1936] [client 127.0.0.1:64710] PHP Notice:  Undefined variable: sFx8 in C:\\www\\A2_B4_Projet\\uLink\\header-stu.php on line 19

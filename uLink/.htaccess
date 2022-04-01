@@ -1,1 +1,10 @@
 DirectoryIndex index.php
+
+# disable directory indexing
+Options All -Indexes
+
+# enable password security
+AuthName "Please register before entering the site."
+AuthType Basic
+AuthUserFile "C:/www/A2_B4_Projet/uLink/.htpasswd"
+Require valid-user
